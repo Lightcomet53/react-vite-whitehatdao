@@ -48,8 +48,8 @@ const InvestmentCard: React.FC<investmentType> = (props) => {
         </div>
       </div>
       <div className="w-1/5 flex justify-end items-center">
-        <button className="orange-gradient rounded-lg font-primary px-5 flex items-center h-8" onClick={() => navigate("/manage-position")}>
-          <IconSettings className="w-5 mr-1" /> Manage Positions
+        <button className="orange-gradient rounded-lg font-primary px-5 flex items-center text-[10px] h-7" onClick={() => navigate("/manage-position")}>
+          <IconSettings className="w-4 mr-1" /> Manage Positions
         </button>
       </div>
     </div>

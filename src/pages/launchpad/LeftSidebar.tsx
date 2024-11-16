@@ -34,15 +34,15 @@ const listArrThree: listType[] = [
 const LeftSidebar: React.FC = () => {
   return (
     <div className="border-r border-r-borderColor relative text-[13px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px]">
-      <div className="px-3 py-8 xl:w-[17vw]">
-        <ul className="px-10">
+      <div className="py-8 xl:w-[17vw]">
+        <ul className="px-9">
           {
             listArrOne.map((item: listType) => (
               <LinkText key={item.title} title={item.title} url={item.url} />
             ))
           }
         </ul>
-        <ul className="px-10 mt-16">
+        <ul className="px-9 mt-16">
           {
             listArrTwo.map((item: listType) => (
               <LinkText key={item.title} title={item.title} url={item.url} />
@@ -50,7 +50,7 @@ const LeftSidebar: React.FC = () => {
           }
         </ul>
         <hr className="mt-10 border-borderColor" />
-        <ul className="px-10">
+        <ul className="px-9">
           {
             listArrThree.map((item: listType) => (
               <LinkText key={item.title} title={item.title} url={item.url} />
@@ -79,7 +79,7 @@ const LinkText: React.FC<LinkTextProp> = ({ title, url }) => {
   const route = useLocation();
   return (
     <Link to={url}>
-      <li className={clsx("my-4 font-primary", route.pathname.split("/")[2] === url.split("/")[2] && "gradient-text")}>{title}</li>
+      <li className={clsx("my-4 font-primary text-sm", route.pathname.split("/")[2] === url.split("/")[2] && "gradient-text")}>{title}</li>
     </Link>
   )
 }

@@ -20,7 +20,7 @@ const CustomSelect = React.forwardRef<HTMLDivElement, PropsType>(({ options, ...
         className: "px-3 content-none"
       }}
       menuProps={{
-        className: "bg-lighterColor"
+        className: "bg-lighterColor border-[#aaaaaa40]"
       }}
       {...props}
     >

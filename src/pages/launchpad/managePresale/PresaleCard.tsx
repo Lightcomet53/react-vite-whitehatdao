@@ -17,7 +17,7 @@ const PresaleCard: React.FC = () => {
   }
 
   return (
-    <div className="rounded-xl bg-lighterColor py-4 px-5 mb-4">
+    <div className="rounded-xl bg-lighterColor py-3 px-5 mb-4">
       <div className="flex justify-between">
         <div className="flex items-center">
           <div className={clsx("w-[8px] h-[8px] mr-2 rounded-full", getColor("LIVE"))}></div>
@@ -41,8 +41,8 @@ const PresaleCard: React.FC = () => {
         </div>
       </div>
       <div className="flex justify-between -mx-1">
-        <GradientButton className="text-[11px] px-1 rounded-sm py-0" style={{padding: "4px"}}>Trade Live on Dex</GradientButton>
-        <button className="text-[11px] rounded-sm font-primary py-0 bg-white text-black flex items-center" style={{padding: "4px"}}><DownloadSvg className="mr-2 mt-[1px]" /> Investor CSV File</button>
+        <GradientButton className="text-[8px] rounded-sm py-0 mr-1" style={{padding: "4px 6px"}}>Trade Live on Dex</GradientButton>
+        <button className="text-[8px]  rounded-sm font-primary py-0 ml-1 bg-white text-black flex items-center" style={{padding: "4px 6px"}}><DownloadSvg className="mr-2 mt-[1px]" /> Investor CSV File</button>
       </div>
     </div>
   )

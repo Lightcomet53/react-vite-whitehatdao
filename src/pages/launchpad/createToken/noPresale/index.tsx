@@ -3,7 +3,7 @@ import TokenInfo from "./TokenInfo";
 
 const NoPresale: React.FC = () => {
   return (
-    <div className="bg-lightColor py-10 px-5 rounded-lg flex">
+    <div className="bg-lightColor py-10 px-5 rounded-lg flex h-[calc(100vh-176px)] overflow-y-scroll ">
       <TokenInfo />
       <Preview />
     </div>

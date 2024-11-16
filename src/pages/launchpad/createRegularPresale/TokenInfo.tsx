@@ -102,10 +102,10 @@ const TokenInfo: React.FC = () => {
         <CustomInput />
       </div>
       <div className="flex items-center mb-5">
-        <span className="mr-2">Suggestion:</span>
+        <span className="mr-2 text-sm">Suggestion:</span>
         {
           suggestionOptions.map((item: string) => (
-            <div className="bg-[#475569] px-2 py-1 rounded-full text-[11px] mr-1">{item}</div>
+            <div className="bg-[#475569] px-1 py-[2px] rounded-lg text-[8px] mr-1">{item}</div>
           ))
         }
       </div>

@@ -5,7 +5,7 @@ const MyPortfolio: React.FC = () => {
   return (
     <div className="px-10">
       <Headers />
-      <div className="overflow-y-scroll h-[calc(100vh-210.5px)]">
+      <div className="overflow-y-scroll h-[calc(100vh-213px)]">
         <Outlet />
       </div>
     </div>
