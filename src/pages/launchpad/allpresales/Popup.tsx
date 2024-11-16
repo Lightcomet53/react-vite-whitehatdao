@@ -8,7 +8,11 @@ const Popup: React.FC = () => {
     setOpen(!open)
   }
   return (
-    <Dialog open={open} className="bg-lightColor py-3 px-10">
+    <Dialog 
+      open={open} 
+      handler={handleOpen} 
+      className="bg-lightColor py-3 px-10"
+    >
       <DialogHeader>
         <div className="m-auto bg-[#23202F] font-primary py-2 px-5 rounded-lg">Presale page terms & Conditions</div>
       </DialogHeader>
