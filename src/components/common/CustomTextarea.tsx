@@ -1,14 +1,21 @@
 import { Textarea, TextareaProps } from "@material-tailwind/react";
 import clsx from "clsx";
+import React from "react";
 
-interface PropsType extends TextareaProps {
+interface PropsType extends Omit<TextareaProps, 'ref'> {
   className?: string;
 }
 
-const CustomTextarea: React.FC<PropsType> = ({ className, ...props }) => {
+const CustomTextarea = React.forwardRef<HTMLDivElement, PropsType>(({ className, ...props }, ref) => {
   return (
-    <Textarea labelProps={{className: "content-none"}} className={clsx("placeholder:opacity-50 text-gray-500 border-none", className && className)} style={{backgroundColor: "#211E2C"}} {...props} />
+    <Textarea
+      ref={ref}
+      labelProps={{className: "content-none"}}
+      className={clsx("placeholder:opacity-50 text-gray-500 border-none", className)}
+      style={{backgroundColor: "#211E2C"}}
+      {...props}
+    />
   )
-}
+});
 
 export default CustomTextarea;

@@ -21,7 +21,7 @@ interface PropsType {
 
 const Categories: React.FC<PropsType> = ({ tab, setTab }) => {
 
-  const handleChange = (e: React.SyntheticEvent, value: string) => {
+  const handleChange = (_: React.SyntheticEvent, value: string) => {
     setTab(value);
   }
 
