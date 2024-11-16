@@ -1,9 +1,15 @@
 import React from "react"
 import clsx from 'clsx';
+import { ButtonProps } from "@material-tailwind/react";
 
-const GradientButton: React.FC<{ children: React.ReactNode, className?: string }> = ({ className, children }) => {
+interface PropsType extends ButtonProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+const GradientButton: React.FC<PropsType> = ({ className, children, ...props }) => {
   return (
-    <button className={clsx("orange-gradient rounded-full font-primary px-5 py-2", className)}>{children}</button>
+    <button className={clsx("orange-gradient rounded-full font-primary px-5 py-2", className)} {...props}>{children}</button>
   )
 }
 export default GradientButton;

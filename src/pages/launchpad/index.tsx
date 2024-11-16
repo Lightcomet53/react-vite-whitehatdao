@@ -2,6 +2,7 @@ import { Outlet } from "react-router";
 import BitRivals from "./BitRivals";
 import LeftSidebar from "./LeftSidebar";
 import RightSidebar from "./RightSidebar";
+import Popup from "./allpresales/Popup";
 
 const LaunchPad: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const LaunchPad: React.FC = () => {
         <Outlet />
       </div>
       <RightSidebar />
+      <Popup />
     </div>
   )
 }

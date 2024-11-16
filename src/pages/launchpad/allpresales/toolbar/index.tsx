@@ -6,7 +6,7 @@ interface PropsType {
   style: string;
   setStyle: (value: string) => void,
   tab: string;
-  setTab: string;
+  setTab: (value: string) => void;
 }
 
 const Toolbar: React.FC<PropsType> = ({ style, setStyle, tab, setTab }) => {

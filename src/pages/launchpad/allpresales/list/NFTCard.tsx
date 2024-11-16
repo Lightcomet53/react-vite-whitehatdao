@@ -13,7 +13,7 @@ const NFTCard: React.FC = () => {
         <img
           src="/assets/images/NFTCard/1.jpg"
           alt="NFTCard-image"
-          className="h-[60px] lg:h-[80px]"
+          className="h-[50px] w-full"
         />
       </CardHeader>
       <CardBody className="p-5 pb-0">
