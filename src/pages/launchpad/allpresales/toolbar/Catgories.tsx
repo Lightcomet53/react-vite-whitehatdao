@@ -26,7 +26,7 @@ const Categories: React.FC<PropsType> = ({ tab, setTab }) => {
   }
 
   return (
-    <Tabs value={tab} onChange={handleChange} className="w-[450px]">
+    <Tabs value={tab} onChange={handleChange} className="w-[430px]">
       <TabsHeader
         className="rounded-none bg-transparent p-0"
         indicatorProps={{
