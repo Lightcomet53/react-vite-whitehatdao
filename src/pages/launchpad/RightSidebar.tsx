@@ -19,7 +19,7 @@ interface listType {
 const RightSidebar: React.FC = () => {
   const [selected, setSelected] = useState("trending")
 
-  const handleChange = (e: React.SyntheticEvent, value: string) => {
+  const handleChange = (_: React.SyntheticEvent, value: string) => {
     setSelected(value)
   }
 

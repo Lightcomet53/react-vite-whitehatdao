@@ -17,8 +17,8 @@ const Steps: React.FC = () => {
   return (
     <div className="w-full flex py-5">
       {
-        options.map((item: optionsType) => (
-          <div className="w-1/3 flex justify-center">
+        options.map((item: optionsType, index: number) => (
+          <div key={index} className="w-1/3 flex justify-center">
             <div className="flex items-center text-[13px]">{item.icon}{item.title}</div>
           </div>
         ))

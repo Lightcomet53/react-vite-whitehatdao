@@ -8,7 +8,7 @@ const Transactions: React.FC = () => {
 
   const [selected, setSelected] = useState<string>("1");
 
-  const handleChange = (e: React.SyntheticEvent, value: string) => {
+  const handleChange = (_: React.SyntheticEvent, value: string) => {
     setSelected(value);
   }
 
