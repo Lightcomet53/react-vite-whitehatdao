@@ -5,7 +5,7 @@ import PresaleCard from "./PresaleCard";
 
 const ManagePresale: React.FC = () => {
   return (
-    <div className="bg-lightColor rounded-lg p-8 m-3">
+    <div className="bg-lightColor rounded-lg p-6 m-3">
       <h5 className="mb-5">PRESALE PAGE</h5>
       <p className="mb-5">List of all Projects Launched</p>
       <Steps />

@@ -28,12 +28,14 @@ const BitRivals: React.FC = () => {
           {
             bitArr.map((item: bitType, i) => (
               <div key={item.name} className="flex items-center mr-1 bg-[#15131D] pr-2 rounded-[320px]">
-                <div className="w-[24px] h-[24px] rounded-full bg-[#F6851B] flex justify-center items-center text-white">{i + 1}</div>
-                <span className="text-[11px] ml-3 mr-2">{item.name}</span>
+                <div>
+                  <div className="w-[24px] h-[24px] text-[12px] rounded-full bg-[#F6851B] flex justify-center items-center text-white">{i + 1}</div>
+                </div>
+                <span className="text-[11px] ml-1 2xl:ml-2 mr-2">{item.name}</span>
                 <img src={item.image} alt="bitrivals" width={16} height={16} className="rounded-[8px]" />
               </div>
             ))
-          } 
+          }
         </div>
       </div>
     </div>

@@ -29,7 +29,7 @@ const PresaleCard: React.FC = () => {
           <span className="text-[11px] ml-1">Manage Presale</span>
         </div>
       </div>
-      <div className="flex items-center mb-4 mt-7">
+      <div className="flex items-center mb-5 mt-6">
         <div className="relative">
           <img src="/assets/images/status/1.png" alt="status" className="absolute -top-[10px] -left-[10px] w-[28px] h-[28px]" />
           <img src="/assets/images/avatars/a.png" alt="avatar" className="mr-4 rounded-full w-[51px] h-[51px]" />
@@ -40,9 +40,9 @@ const PresaleCard: React.FC = () => {
           <p className="text-[11.5px]">Spots Left 2499990</p>
         </div>
       </div>
-      <div className="flex justify-between">
-        <GradientButton className="text-[12px] px-1 rounded-lg h-8 py-0">Trade Live on Dex</GradientButton>
-        <button className="text-[12px] rounded-lg font-primary h-9 py-0 bg-white px-3 text-black flex items-center"><DownloadSvg className="mr-2 mt-[1px]" /> Investor CSV File</button>
+      <div className="flex justify-between -mx-1">
+        <GradientButton className="text-[11px] px-1 rounded-sm py-0" style={{padding: "4px"}}>Trade Live on Dex</GradientButton>
+        <button className="text-[11px] rounded-sm font-primary py-0 bg-white text-black flex items-center" style={{padding: "4px"}}><DownloadSvg className="mr-2 mt-[1px]" /> Investor CSV File</button>
       </div>
     </div>
   )

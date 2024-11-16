@@ -13,7 +13,7 @@ const NFTCard: React.FC = () => {
         <img
           src="/assets/images/NFTCard/1.jpg"
           alt="NFTCard-image"
-          className="h-[50px] w-full"
+          className="max-h-[80px] w-full"
         />
       </CardHeader>
       <CardBody className="p-5 pb-0">
@@ -45,22 +45,22 @@ const NFTCard: React.FC = () => {
             <span>2100 SOL</span>
             </div>
         </div>
-        <div className="flex justify-between mt-5 px-4">
-          <p className="border-b border-borderColor text-[12px]">Rate <span className="ml-1 text-orange-500">111.111 $RIVAL</span></p>
-          <p className="border-b border-borderColor text-[12px]">LOCK <span className="ml-1 text-orange-500">Manual</span></p>
+        <div className="flex justify-between mt-5 px-2">
+          <p className="border-b border-borderColor text-[11.5px]">Rate <span className="ml-1 text-orange-500">111.111 $RIVAL</span></p>
+          <p className="border-b border-borderColor text-[11.5px]">LOCK <span className="ml-1 text-orange-500">Manual</span></p>
         </div>
       </CardBody>
-      <CardFooter className="flex items-center justify-between p-5">
+      <CardFooter className="flex items-center justify-between px-5 pb-3 pt-4">
         <div className="flex items-center">
-            <IconWorld color="#919EAB" className="cursor-pointer w-[17px] mx-1" />
-            <IconSend color="#919EAB" className="cursor-pointer w-[17px] mx-1" />
-            <IconBrandX color="#919EAB" className="cursor-pointer w-[17px] mx-1" />
+            <IconWorld color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
+            <IconSend color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
+            <IconBrandX color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
         </div>
-        <IconPlus color="#919EAB" className="cursor-pointer w-[17px] mx-1" />
+        <IconPlus color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
         <div className="flex items-center">
-            <IconMessageFilled color="#919EAB" className="cursor-pointer w-[17px] mx-1" />
-            <IconBellFilled color="#919EAB" className="cursor-pointer w-[17px] mx-1" />
-            <IconHeart color="#919EAB" className="cursor-pointer w-[17px] mx-1" />
+            <IconMessageFilled color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
+            <IconBellFilled color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
+            <IconHeart color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
         </div>
       </CardFooter>
     </Card>
