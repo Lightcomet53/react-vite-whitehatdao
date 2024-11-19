@@ -2,7 +2,7 @@ import CreateTokenCard from "./CreateTokenCard";
 
 const CreateTokenList: React.FC = () => {
   return (
-    <div className="flex flex-col w-full justify-between items-center h-[calc(100vh-174px)] overflow-y-scroll pb-3">
+    <div className="flex flex-col w-full justify-between items-center h-[calc(100vh-176px)] overflow-y-scroll pb-3">
       <div className="py-[50px] flex justify-center mb-10">
         <CreateTokenCard title="Create Token With Dynamic Fair Launch Presale" href="/with-presale/first-step" image="/assets/images/memo-coin.png" />
         <CreateTokenCard title="Create ERC20 Token Without Presale" href="/no-presale" image="/assets/images/ERC-coin.png" />

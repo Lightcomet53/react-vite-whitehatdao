@@ -33,7 +33,7 @@ const listArrThree: listType[] = [
 
 const LeftSidebar: React.FC = () => {
   return (
-    <div className="px-3 py-8 h-[calc(100vh-83.5px)] overflow-y-scroll flex flex-col justify-between">
+    <div className="px-3 py-8 2xl:h-[calc(100vh-85px)] sm:h-[calc(100vh-82px)] h-[calc(100vh-80px)] overflow-y-scroll flex flex-col justify-between">
       <div>
         <ul className="px-10">
           {

@@ -6,7 +6,7 @@ import Popup from "./allpresales/Popup";
 
 const LaunchPad: React.FC = () => {
   return (
-    <div className="flex 2xl:h-[calc(100vh-73px)] xl:h-[calc(100vh-69px)] sm:h-[calc(100vh-65px)] h-[calc(100vh-63px)] justify-between">
+    <div className="flex 2xl:h-[calc(100vh-85px)] sm:h-[calc(100vh-82px)] h-[calc(100vh-80px)] justify-between">
       <div className="border-r border-r-borderColor relative text-[13px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] w-[20vw] 2xl:w-[17vw]">
         <LeftSidebar />
       </div>

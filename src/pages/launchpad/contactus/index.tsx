@@ -5,7 +5,7 @@ import LabelText from "@/components/common/LabelText";
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="h-[calc(100vh-174px)] overflow-y-scroll pb-3">
+    <div className="h-[calc(100vh-176px)] overflow-y-scroll pb-3">
       <div className="bg-lightColor p-10 pb-3 rounded-lg w-full lg:w-2/3 xl:w-1/2 m-auto">
         <h5 className="mb-5">CONTACT US</h5>
         <div className="mb-5">
