@@ -1,5 +1,5 @@
 export const linkOtherSite = (url: string) => {
-  window.href = url;
+  window.location.href = url;
 }
 export const getStepColor = (step: string) => {
   if (step === "Live") return "bg-greenColor";

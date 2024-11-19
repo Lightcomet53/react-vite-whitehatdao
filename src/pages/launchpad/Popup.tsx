@@ -8,8 +8,9 @@ const Popup: React.FC = () => {
     setOpen(!open)
   }
   return (
-    <Dialog 
-      open={open} 
+    <Dialog
+      open={open}
+      handler={handleOpen}
       className="bg-lightColor py-3 px-10"
     >
       <DialogHeader>

@@ -5,7 +5,7 @@ import LabelText from "@/components/common/LabelText";
 import MoveButton from "@/components/common/MoveButton";
 import { IconPhotoPlus } from "@tabler/icons-react";
 import { useNavigate } from "react-router";
-import { RegularPresaleType } from ".";
+import { RegularPresaleFormType } from ".";
 import { multiSelectStyle } from "@/components/utils/constants";
 import ReactSelect from 'react-select';
 import Upload from "rc-upload";
@@ -38,8 +38,8 @@ const suggestionOptions: { value: string, label: string }[] = [
   { value: "NFT", label: "NFT" }
 ]
 interface PropsType {
-  form: RegularPresaleType,
-  setForm: (value: RegularPresaleType) => void;
+  form: RegularPresaleFormType,
+  setForm: (value: RegularPresaleFormType) => void;
 }
 
 const TokenInfo: React.FC<PropsType> = ({ form, setForm }) => {
@@ -122,7 +122,12 @@ const TokenInfo: React.FC<PropsType> = ({ form, setForm }) => {
         </div>
       </div>
       <div className="mb-5">
-        <CustomSelect name="dex" onChange={value => handleSelectChange("dex", value)} options={dexOptions} label="Select Dex" />
+        <CustomSelect 
+          name="dex" 
+          onChange={value => handleSelectChange("dex", value || '')} 
+          options={dexOptions} 
+          label="Select Dex" 
+        />
       </div>
       <div className="mb-5">
         <LabelText>Tags - Max 2 tags</LabelText>
@@ -137,7 +142,7 @@ const TokenInfo: React.FC<PropsType> = ({ form, setForm }) => {
         <span className="mr-2">Suggestion:</span>
         {
           suggestionOptions.map((item: string) => (
-            <div className="bg-[#475569] px-2 py-1 rounded-full text-[11px] mr-1">{item}</div>
+            <div className="bg-[#475569] px-1 py-[2px] rounded-lg text-[8px] mr-1">{item}</div>
           ))
         }
       </div> */}

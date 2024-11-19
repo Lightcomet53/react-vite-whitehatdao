@@ -2,8 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import clsx from 'clsx';
 import TwitterSvg from "@/components/icons/twitter-svg";
 import TelegramSvg from "@/components/icons/Telegram-svg";
-import RedditSvg from "@/components/icons/Discord-svg";
-import WhatsAppSvg from "@/components/icons/Whatsapp-svg";
+import DiscordSvg from "@/components/icons/Discord-svg";
 
 interface listType {
   title: string;
@@ -33,9 +32,9 @@ const listArrThree: listType[] = [
 
 const LeftSidebar: React.FC = () => {
   return (
-    <div className="px-3 py-8 2xl:h-[calc(100vh-85px)] sm:h-[calc(100vh-82px)] h-[calc(100vh-80px)] overflow-y-scroll flex flex-col justify-between">
+    <div className="px-3 py-8 h-[calc(100vh-85px)] w-[20vw] lg:w-[17vw] overflow-y-scroll flex flex-col justify-between">
       <div>
-        <ul className="px-10">
+        <ul className="pl-[4.3vw] lg:pl-[2.2vw]">
           {
             listArrOne.map((item: listType) => (
               <LinkText key={item.title} title={item.title} url={item.url} />
@@ -43,7 +42,7 @@ const LeftSidebar: React.FC = () => {
           }
         </ul>
         <hr className="mt-10 border-borderColor" />
-        <ul className="px-10 mt-16">
+        <ul className="pl-[4.3vw] lg:pl-[2.2vw] mt-16">
           {
             listArrTwo.map((item: listType) => (
               <LinkText key={item.title} title={item.title} url={item.url} />
@@ -51,7 +50,7 @@ const LeftSidebar: React.FC = () => {
           }
         </ul>
         <hr className="mt-10 border-borderColor" />
-        <ul className="px-10">
+        <ul className="pl-[4.3vw] lg:pl-[2.2vw]">
           {
             listArrThree.map((item: listType) => (
               <LinkText key={item.title} title={item.title} url={item.url} />
@@ -59,15 +58,20 @@ const LeftSidebar: React.FC = () => {
           }
         </ul>
       </div>
-      <div className="px-10">
+      <div className="pl-[4.3vw] lg:pl-[2.2vw]">
         <ul>
           <LinkText title="Contact Us" url="/launchpad/contact-us" />
         </ul>
         <div className="flex">
-          <TwitterSvg className="mr-2 cursor-pointer hover:opacity-80" />
-          <TelegramSvg className="mr-2 cursor-pointer hover:opacity-80" />
-          <RedditSvg className="mr-2 cursor-pointer hover:opacity-80" />
-          {/* <WhatsAppSvg className="mr-2" /> */}
+          <Link to="https://x.com/White_Hat_DAO">
+            <TwitterSvg className="mr-2 w-7 h-7 cursor-pointer hover:opacity-80 duration-150" />
+          </Link>
+          <Link to="http://t.me/whitehatdao">
+            <TelegramSvg className="mr-2 w-7 h-7 cursor-pointer hover:opacity-80 duration-150" />
+          </Link>
+          <Link to="http://discord.gg/sHbRMxev3p">
+            <DiscordSvg className="mr-2 w-7 h-7 cursor-pointer hover:opacity-80 duration-150" />
+          </Link>
         </div>
       </div>
     </div>

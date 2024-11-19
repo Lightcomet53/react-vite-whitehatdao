@@ -6,39 +6,39 @@ import VectorSvg from "@/components/icons/Vector-svg"
 
 const RightSidebar: React.FC = () => {
   return (
-    <div className="border-borderColor border-l mb-2">
-      <div className="w-[400px] px-2 pt-10 overflow-y-scroll h-full">
-        <div className="bg-darkPurple flex mb-8 justify-center items-center rounded-md py-1">
+    <div className="border-borderColor border-l">
+      <div className="w-[17vw] px-2 pt-9 overflow-y-scroll h-full">
+        <div className="bg-darkPurple flex mb-6 justify-center items-center rounded-md py-1">
           <div className="w-[11px] h-[11px] bg-greenColor rounded-full"></div>
           <p className="ml-3">LIVE PRESALE</p>
         </div>
-        <BorderBox className="flex p-3 mb-4">
+        <BorderBox className="flex p-3 mb-3">
           <div className="w-1/2">
-            <p><span className="text-gray-600">Curve:</span> APE</p>
+            <p><span className="text-gray-600 text-sm">Curve:</span> APE</p>
           </div>
           <div className="w-1/2">
-            <p><span className="text-gray-600">Chain:</span></p>
+            <p><span className="text-gray-600 text-sm">Chain:</span></p>
           </div>
         </BorderBox>
-        <BorderBox className="p-3 text-center mb-4">
-          <p className="text-gray-600">PRICE</p>
-          <p>0.0 1012 vETH</p>
+        <BorderBox className="p-3 text-center mb-3">
+          <p className="text-gray-600 text-sm">PRICE</p>
+          <p className="text-sm">0.0 1012 vETH</p>
         </BorderBox>
         <BorderBox className="p-3">
-          <div className="flex items-center mb-2">Bonding curve progress: 0.453 <InfoSvg className="ml-2" /></div>
+          <div className="flex items-center mb-2 text-sm">Bonding curve progress: 0.453 <InfoSvg className="ml-2" /></div>
           <Progress color="green" style={{ backgroundColor: "#99999940" }} value={80} variant="gradient" className="h-4" />
         </BorderBox>
         <BorderBox className="p-3 mb-3">
           <div className="flex justify-between">
             <div className="w-1/2 pr-1">
-              <Button fullWidth color="green">Buy</Button>
+              <Button fullWidth color="green" className="py-2">Buy</Button>
             </div>
             <div className="w-1/2 pl-1">
-              <Button fullWidth color="red">Sell</Button>
+              <Button fullWidth color="red" className="py-2">Sell</Button>
             </div>
           </div>
           <p className="text-[12px] px-2 my-3">Switch to WIF</p>
-          <div className="bg-darkPurple flex justify-between pl-5 pr-10 rounded-lg py-2">
+          <div className="bg-darkPurple flex justify-between pl-5 pr-10 rounded-lg py-2 text-sm">
             <span>0</span>
             <span>vETH</span>
           </div>
@@ -50,12 +50,12 @@ const RightSidebar: React.FC = () => {
           </div>
           <p className="text-[12px] px-2 mb-2">1.4 vETH</p>
           <p className="text-[12px] px-2 mb-2">You will receive 0 (~) WIF</p>
-          <Button className="mb-3 bg-gray-300 text-black" fullWidth>Place Trade</Button>
-          <Button className="mb-3 bg-gray-300 text-black" fullWidth>Ape remaining curve</Button>
+          <Button className="mb-3 bg-gray-300 py-2 text-black" fullWidth>Place Trade</Button>
+          <Button className="mb-3 bg-gray-300 py-2 text-black" fullWidth>Ape remaining curve</Button>
           <p className="text-[12px] px-2">Your balace: 0 (~0)</p>
         </BorderBox>
         <BorderBox className="mb-5">
-          <div className="bg-borderColor py-2 text-center">Stats</div>
+          <div className="bg-borderColor py-2 text-center text-sm">Stats</div>
           <div className="flex p-2">
             <div className="w-1/2 flex flex-col justify-between">
               <div>
@@ -114,21 +114,21 @@ const RightSidebar: React.FC = () => {
             </div>
           </div>
         </BorderBox>
-        <div className="flex justify-between items-center py-3 border-b border-borderColor">
+        <div className="flex justify-between items-center py-3 text-[11px] border-b border-borderColor">
           <p>Contract Address</p>
           <div className="flex items-center">
 
-            <div className="rounded-md px-2 py-1 flex items-center bg-borderColor overflow-x-hidden">
+            <div className="rounded-md p-1 text-ellipsis whitespace-nowrap flex items-center w-20 px-1 bg-borderColor overflow-x-hidden">
               <DocSvg className="mr-1" />
               0xc23fdsv23c2cd 233rfdsaf
             </div>
             <VectorSvg className="ml-2" />
           </div>
         </div>
-        <div className="flex justify-between items-center py-3 border-b border-borderColor">
+        <div className="flex justify-between items-center text-[11px]  py-3 border-b border-borderColor">
           <p>Creator wallet</p>
           <div className="flex items-center">
-            <div className="rounded-md px-2 py-1 flex items-center bg-borderColor overflow-x-hidden">
+            <div className="rounded-md p-1 text-ellipsis whitespace-nowrap flex items-center w-20 px-1 bg-borderColor overflow-x-hidden">
               <DocSvg className="mr-1" />
               0xc23fdsv23c2cd 233rfdsaf
             </div>

@@ -3,9 +3,9 @@ import Headers from "./Headers";
 
 const MyPortfolio: React.FC = () => {
   return (
-    <div className="px-10">
+    <div className="pl-[4.3vw] lg:pl-[2.2vw]">
       <Headers />
-      <div className="overflow-y-scroll h-[calc(100vh-212px)]">
+      <div className="overflow-y-scroll h-[calc(100vh-213px)]">
         <Outlet />
       </div>
     </div>
