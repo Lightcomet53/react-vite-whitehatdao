@@ -19,9 +19,9 @@ const Home = () => {
       {/* background image end */}
 
       {/* dividers */}
-      <div className="w-[1px] h-full absolute top-0 left-[calc(4.3vw-1px)] lg:left-[17vw] bg-borderColor" />
+      <div className="w-[1px] h-full absolute top-0 left-[calc(4.3vw-1px)] lg:left-[calc(17vw-1px)] bg-borderColor" />
       <div className="w-[1px] h-full absolute top-0 left-1/2 bg-borderColor" />
-      <div className="w-[1px] h-full absolute top-0 right-[calc(4.3vw-1px)] lg:right-[17vw] bg-borderColor" />
+      <div className="w-[1px] h-full absolute top-0 right-[calc(4.3vw-1px)] lg:right-[calc(17vw-1px)] bg-borderColor" />
 
       <Intro />
 
@@ -29,17 +29,17 @@ const Home = () => {
 
       <Solutions />
 
-      {/* <OurToken /> */}
+      <OurToken />
 
-      {/* <Roadmap /> */}
+      <Roadmap />
 
-      {/* <Team /> */}
+      <Team />
 
-      {/* <Faq /> */}
+      <Faq />
 
-      {/* <Join /> */}
+      <Join />
 
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   )
