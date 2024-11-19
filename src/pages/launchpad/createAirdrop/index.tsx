@@ -13,11 +13,11 @@ const chainOptions: { title: string, value: string }[] = [
 
 const CreateAirdrop: React.FC = () => {
   return (
-    <div className="bg-lightColor py-10 px-5 rounded-lg lg:w-2/3 xl:w-1/2 m-auto mt-10">
+    <div className="bg-lightColor py-10 px-5 rounded-lg lg:w-2/3 xl:w-1/2 m-auto mt-10 h-[calc(100vh-174px)] overflow-y-scroll pb-3">
       <h5 className="mb-5">AIRDROP</h5>
       <div className="mb-10 mt-5">
-        <LabelText>Token Lock amount</LabelText>
-        <CustomSelect options={chainOptions} label="Select lock amount" />
+        <LabelText>Select chain</LabelText>
+        <CustomSelect options={chainOptions} label="Select chain" />
       </div>
       <div className="mb-5">
         <LabelText>Token Contract</LabelText>

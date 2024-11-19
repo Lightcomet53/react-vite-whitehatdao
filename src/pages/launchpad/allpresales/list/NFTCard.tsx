@@ -1,36 +1,47 @@
-import { Card, CardBody, CardFooter, CardHeader, Progress } from "@material-tailwind/react";
+import { getStepColor } from "@/components/utils/func";
+import { Card, CardBody, CardFooter, Progress } from "@material-tailwind/react";
 import { IconBellFilled, IconBrandX, IconHeart, IconMessageFilled, IconPlus, IconSend, IconWorld } from "@tabler/icons-react";
+import clsx from "clsx";
+import { useNavigate } from "react-router";
 
-const NFTCard: React.FC = () => {
+export interface NFTCardType {
+  id: string;
+  step: string;
+  avatar: string;
+  name: string;
+  type: string;
+  progress: number;
+}
+
+const NFTCard: React.FC<NFTCardType> = (props) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/presale-detail/" + props.id);
+  }
+
+  
   return (
-    <Card className="w-full overflow-hidden bg-lightColor rounded-[15px] mb-14">
-      <CardHeader
-        floated={false}
-        shadow={false}
-        color="transparent"
-        className="m-0 rounded-none"
-      >
-        <img
-          src="/assets/images/NFTCard/1.jpg"
-          alt="NFTCard-image"
-          className="max-h-[80px] w-full"
-        />
-      </CardHeader>
+    <Card
+      className="w-full overflow-hidden bg-lightColor rounded-[15px] mb-14 hover:shadow-md hover:shadow-gray-700 cursor-pointer"
+      style={{ transition: '0.3s' }}
+      onClick={handleClick}
+    >
       <CardBody className="p-5 pb-0">
         <div className="flex items-center text-white">
-          <div className="w-[8px] h-[8px] bg-green-500 rounded-full mr-2"></div>
-          <span className="text-[12px] mr-3">SALE LIVE</span>
+          <div className={clsx("w-[8px] h-[8px] rounded-full mr-2", getStepColor(props.step))}></div>
+          <span className="text-[12px] mr-3">SALE {props.step.toUpperCase()}</span>
           <span className="text-[12px]">6:23:32:44</span>
         </div>
         <div className="flex items-center mb-4 mt-7">
           <div className="relative">
-          <img src="/assets/images/status/1.png" alt="status" className="absolute -top-[10px] -left-[10px] w-[28px] h-[28px]" />
-          <img src="/assets/images/avatars/a.png" alt="avatar" className="mr-4 rounded-full w-[51px] h-[51px]" />
+            {/* <img src="/assets/images/status/1.png" alt="status" className="absolute -top-[10px] -left-[10px] w-[28px] h-[28px]" /> */}
+            <img src={props.avatar} alt="avatar" className="mr-4 rounded-full w-[51px] h-[51px]" />
           </div>
           <div className="text-white">
-            <p className="text-[12px]">PINGO</p>
-            <p className="text-[11.5px]">Hyper Launch</p>
-            <p className="text-[11.5px]">Spots Left 2499990</p>
+            <p className="text-[12px]">{props.name}</p>
+            <p className="text-[11.5px]">{props.type}</p>
+            {/* <p className="text-[11.5px]">Spots Left 2499990</p> */}
           </div>
         </div>
         <div>
@@ -38,12 +49,12 @@ const NFTCard: React.FC = () => {
             <span>Progress</span>
             <span>Intended Raise</span>
           </div>
-          <Progress color="green" style={{backgroundColor: "#99999940"}} value={80} variant="gradient" className="my-1" />
+          <Progress color="green" style={{ backgroundColor: "#99999940" }} value={80} variant="gradient" className="my-1" />
           <div className="flex justify-between text-[12px]">
             <span>2100 SOL</span>
             <span>100%</span>
             <span>2100 SOL</span>
-            </div>
+          </div>
         </div>
         <div className="flex justify-between mt-5 px-2">
           <p className="border-b border-borderColor text-[11.5px]">Rate <span className="ml-1 text-orange-500">111.111 $RIVAL</span></p>
@@ -52,18 +63,19 @@ const NFTCard: React.FC = () => {
       </CardBody>
       <CardFooter className="flex items-center justify-between px-5 pb-3 pt-4">
         <div className="flex items-center">
-            <IconWorld color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
-            <IconSend color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
-            <IconBrandX color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
+          <IconWorld color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
+          <IconSend color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
+          <IconBrandX color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
         </div>
         <IconPlus color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
         <div className="flex items-center">
-            <IconMessageFilled color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
-            <IconBellFilled color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
-            <IconHeart color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
+          <IconMessageFilled color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
+          <IconBellFilled color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
+          <IconHeart color="#919EAB" className="cursor-pointer w-[16px] mx-1" />
         </div>
       </CardFooter>
     </Card>
   )
 }
+
 export default NFTCard;

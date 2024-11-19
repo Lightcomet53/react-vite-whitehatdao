@@ -29,17 +29,17 @@ const Home = () => {
 
       <Solutions />
 
-      <OurToken />
+      {/* <OurToken /> */}
 
-      <Roadmap />
+      {/* <Roadmap /> */}
 
-      <Team />
+      {/* <Team /> */}
 
-      <Faq />
+      {/* <Faq /> */}
 
-      <Join />
+      {/* <Join /> */}
 
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
   )

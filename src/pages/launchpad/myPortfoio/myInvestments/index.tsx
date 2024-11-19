@@ -1,14 +1,14 @@
 import { useState } from "react";
-import Steps from "./Steps";
 import InvestmentList from "./InvestmentList";
+import Steps from "../../allpresales/Steps";
 
 
 const MyInvestments: React.FC = () => {
   const [step, setStep] = useState<string>("Live")
   return (
-    <div>
+    <div className="py-5">
       <Steps step={step} setStep={setStep} />
-      <InvestmentList />
+      <InvestmentList step={step} />
     </div>
   )
 }
