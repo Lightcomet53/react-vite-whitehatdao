@@ -10,6 +10,7 @@ const Popup: React.FC = () => {
   return (
     <Dialog 
       open={open} 
+      handler={handleOpen}
       className="bg-lightColor py-3 px-10"
     >
       <DialogHeader>
