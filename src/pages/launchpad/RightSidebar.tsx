@@ -37,7 +37,7 @@ const RightSidebar: React.FC = () => {
   ]
 
   return (
-    <div className="">
+    <div className="w-[20vw] lg:w-[17vw]">
       <Tabs value={selected} onChange={handleChange}>
         <TabsHeader
           className="rounded-none border-b border-borderColor bg-transparent p-0"

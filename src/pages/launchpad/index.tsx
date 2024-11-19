@@ -7,12 +7,14 @@ import Popup from "./Popup";
 const LaunchPad: React.FC = () => {
   return (
     <div className="flex 2xl:h-[calc(100vh-88px)] xl:h-[calc(100vh-84px)] h-[calc(100vh-80px)] justify-between">
-      <LeftSidebar />
+      <div className="border-borderColor border-r">
+        <LeftSidebar />
+      </div>
       <div className="pt-3 w-full px-4">
         <BitRivals />
         <Outlet />
       </div>
-      <div className="border-borderColor border-l w-[20vw] 2xl:w-[17vw]">
+      <div className="border-borderColor border-l">
         <RightSidebar />
       </div>
       <Popup />
