@@ -10,7 +10,7 @@ const PresaleDetail: React.FC = () => {
         <LeftSidebar />
         <div className="pt-3 w-full px-4">
           <BitRivals />
-          <div className="h-[calc(100vh-175px)] -mx-4">
+          <div className="h-[calc(100vh-176px)] -mx-4">
             <div className="h-[600px]"></div>
             <Transactions />
           </div>
