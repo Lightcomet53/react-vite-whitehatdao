@@ -12,7 +12,9 @@ const LaunchPad: React.FC = () => {
         <BitRivals />
         <Outlet />
       </div>
-      <RightSidebar />
+      <div className="border-borderColor border-l w-[20vw] 2xl:w-[17vw]">
+        <RightSidebar />
+      </div>
       <Popup />
     </div>
   )

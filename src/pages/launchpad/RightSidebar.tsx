@@ -37,29 +37,27 @@ const RightSidebar: React.FC = () => {
   ]
 
   return (
-    <div className="border-borderColor border-l">
-      <div className="w-[17vw]">
-        <Tabs value={selected} onChange={handleChange}>
-          <TabsHeader
-            className="rounded-none border-b border-borderColor bg-transparent p-0"
-            indicatorProps={{
-              className:
-                "bg-transparent border-b border-[#F97736] shadow-none rounded-none",
-            }}
-          >
-            <Tab value="trending" className="text-gray-600 py-3">Trending</Tab>
-            <Tab value="watchlist" className="text-gray-600 py-3">Watchlist</Tab>
-          </TabsHeader>
-          <TabsBody>
-            <TabPanel value="trending" className="p-0">
-              <ContentList options={data} />
-            </TabPanel>
-            <TabPanel value="watchlist" className="p-0">
-              <ContentList options={data} />
-            </TabPanel>
-          </TabsBody>
-        </Tabs>
-      </div>
+    <div className="">
+      <Tabs value={selected} onChange={handleChange}>
+        <TabsHeader
+          className="rounded-none border-b border-borderColor bg-transparent p-0"
+          indicatorProps={{
+            className:
+              "bg-transparent border-b border-[#F97736] shadow-none rounded-none",
+          }}
+        >
+          <Tab value="trending" className="text-gray-600 py-3">Trending</Tab>
+          <Tab value="watchlist" className="text-gray-600 py-3">Watchlist</Tab>
+        </TabsHeader>
+        <TabsBody>
+          <TabPanel value="trending" className="p-0">
+            <ContentList options={data} />
+          </TabPanel>
+          <TabPanel value="watchlist" className="p-0">
+            <ContentList options={data} />
+          </TabPanel>
+        </TabsBody>
+      </Tabs>
     </div>
   )
 }

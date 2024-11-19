@@ -10,7 +10,7 @@ const CustomInput = React.forwardRef<HTMLInputElement, PropsType>(({ className, 
   return (
     <Input 
       ref={ref}
-      crossOrigin={false} 
+      crossOrigin={'false'} 
       labelProps={{ className: "content-none" }} 
       containerProps={{ className }} 
       className={clsx("placeholder:opacity-50 text-gray-500 border-none mb-3")} 

@@ -19,6 +19,7 @@ import ManagePresale from "./pages/launchpad/managePresale";
 import ManagePosition from "./pages/launchpad/managePosition";
 import LaunchPad from "./pages/launchpad";
 import Home from "./pages/home";
+import PresaleDetail from "./pages/launchpad/presaleDetail";
 
 const element = createRoutesFromElements(
     <>
@@ -50,6 +51,7 @@ const element = createRoutesFromElements(
                 <Route path="kol-groups" element={<ContactUs />} />
                 <Route path="contact-us" element={<ContactUs />} />
             </Route>
+            <Route path="presale-detail/:id" element={<PresaleDetail />} />
             <Route path="manage-position" element={<ManagePosition />} />
         </Route>
     </>

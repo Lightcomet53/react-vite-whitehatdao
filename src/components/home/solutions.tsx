@@ -53,8 +53,8 @@ export default function Solutions() {
                     <div className="sm:flex block">
                         <div className="sm:w-1/2 text-white px-4 pb-4 border-b border-borderColor">
                             <div className="sm:mb-24 mb-4">
-                                <h4 className="mb-3 sm:text-left text-center">Sonicity Dex</h4>
-                                <p>Sonicity Dex is a Sonic native automated market maker, decentralized exchange. Where users can participate in trading, farming, staking and liquidity mining activities.</p>
+                                <h4 className="mb-3 sm:text-left text-center">Dex</h4>
+                                <p>Dex is a Sonic native automated market maker, decentralized exchange. Where users can participate in trading, farming, staking and liquidity mining activities.</p>
                             </div>
                             <p>Our Protocol facilitates a new kind of leveraged yield farming experience with enhanced leverage and farming rewards, while enabling lenders to earn a significantly higher yield on supplied tokens without the risk of impermanent losses.</p>
                         </div>
@@ -113,8 +113,8 @@ export default function Solutions() {
                     <div className="sm:flex block">
                         <div className="sm:w-1/2 text-white px-4 pb-4 border-b border-borderColor">
                             <div className="sm:mb-24 mb-4">
-                                <h4 className="mb-3 sm:text-left text-center">Sonicity NFT-Marketplace</h4>
-                                <p>Discover a vibrant ecosystem where creativity meets technology. At Sonicity NFT, we empower artists, collectors, and enthusiasts to explore the limitless potential of non-fungible tokens (NFTs).</p>
+                                <h4 className="mb-3 sm:text-left text-center">NFT-Marketplace</h4>
+                                <p>Discover a vibrant ecosystem where creativity meets technology. At NFT, we empower artists, collectors, and enthusiasts to explore the limitless potential of non-fungible tokens (NFTs).</p>
                             </div>
                             <p>Our platform offers a seamless experience for buying, selling, and trading unique digital assets, ranging from stunning artwork and music to virtual real estate and collectibles.</p>
                         </div>
@@ -173,7 +173,7 @@ export default function Solutions() {
                     <div className="sm:flex block">
                         <div className="sm:w-1/2 text-white px-4 pb-4 border-b border-borderColor">
                             <div className="sm:mb-24 mb-4">
-                                <h4 className="mb-3 sm:text-left text-center">Sonicity Launchpad</h4>
+                                <h4 className="mb-3 sm:text-left text-center">Launchpad</h4>
                                 <p>A Sonic natvie decentralized launchpad for crowdfunding, is a great way for users to invest and project owners to launch their projects.</p>
                             </div>
                             <p>Note: Users must do their own due diligence before investing. White Hat DAO takes no responsibility and liabilities for users own choice of investments.</p>

@@ -6,12 +6,13 @@ import NFTList from "./list";
 const AllPresales: React.FC = () => {
   const [style, setStyle] = useState<string>("apps");
   const [tab, setTab] = useState<string>("all_presales");
+  const [step, setStep] = useState<string>("Live");
 
   return (
     <div className="relative">
       <Toolbar style={style} setStyle={setStyle} tab={tab} setTab={setTab} />
-      <Steps />
-      <NFTList />
+      <Steps step={step} setStep={setStep} />
+      <NFTList step={step} />
     </div>
   )
 }

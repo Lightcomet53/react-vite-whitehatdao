@@ -1,23 +1,16 @@
-import InvestmentCard, { investmentType } from "./InvestmentCard";
+import { presaleData } from "@/components/utils/constants";
+import InvestmentCard from "./InvestmentCard";
+import { PresaleCardType } from "../../managePresale/PresaleCard";
 
-
-
-
-const data: investmentType[] = [
-  { image: "/assets/images/investments/1.png", name: "DOGE", price: 12.33, percent: 0.03, invested: 2.3, balance: 12312, value: 232.03, diffValue: 3.34 },
-  { image: "/assets/images/investments/1.png", name: "DOGE", price: 12.33, percent: 0.03, invested: 2.3, balance: 12312, value: 232.03, diffValue: 3.34 },
-  { image: "/assets/images/investments/1.png", name: "DOGE", price: 12.33, percent: 0.03, invested: 2.3, balance: 12312, value: 232.03, diffValue: 3.34 },
-]
-
-const InvestmentList: React.FC = () => {
+const InvestmentList: React.FC<{ step: string }> = ({ step }) => {
   return (
-    <div>
+    <div className="overflow-y-scroll h-[calc(100vh-318.55px)]">
       {
-        data.map((item: investmentType, index: number) => (
-          <InvestmentCard
-            key={index.toString()}
-            {...item}
-          />
+        presaleData.filter((item: PresaleCardType) => item.step === step).map((item: PresaleCardType, index: number) => (
+          <div key={index} className="w-full">
+            <InvestmentCard {...item} />
+          </div>
+
         ))
       }
     </div>

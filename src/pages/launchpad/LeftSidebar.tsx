@@ -2,8 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import clsx from 'clsx';
 import TwitterSvg from "@/components/icons/twitter-svg";
 import TelegramSvg from "@/components/icons/Telegram-svg";
-import RedditSvg from "@/components/icons/Reddit-svg";
-import WhatsAppSvg from "@/components/icons/Whatsapp-svg";
+import RedditSvg from "@/components/icons/Discord-svg";
 
 interface listType {
   title: string;
@@ -33,16 +32,17 @@ const listArrThree: listType[] = [
 
 const LeftSidebar: React.FC = () => {
   return (
-    <div className="border-r border-r-borderColor relative text-[13px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px]">
-      <div className="py-8 xl:w-[17vw]">
-        <ul className="px-9">
+    <div className="px-3 py-8 h-[calc(100vh-83.5px)] overflow-y-scroll flex flex-col justify-between">
+      <div>
+        <ul className="px-10">
           {
             listArrOne.map((item: listType) => (
               <LinkText key={item.title} title={item.title} url={item.url} />
             ))
           }
         </ul>
-        <ul className="px-9 mt-16">
+        <hr className="mt-10 border-borderColor" />
+        <ul className="px-10 mt-16">
           {
             listArrTwo.map((item: listType) => (
               <LinkText key={item.title} title={item.title} url={item.url} />
@@ -57,14 +57,16 @@ const LeftSidebar: React.FC = () => {
             ))
           }
         </ul>
-        <ul className="absolute bottom-[40px] left-[48.5px]">
+      </div>
+      <div className="px-10">
+        <ul>
           <LinkText title="Contact Us" url="/launchpad/contact-us" />
         </ul>
-        <div className="flex absolute bottom-[20px] left-[48.5px]">
-          <TwitterSvg className="mr-2" />
-          <TelegramSvg className="mr-2" />
-          <RedditSvg className="mr-2" />
-          <WhatsAppSvg className="mr-2" />
+        <div className="flex">
+          <TwitterSvg className="mr-2 cursor-pointer hover:opacity-80" />
+          <TelegramSvg className="mr-2 cursor-pointer hover:opacity-80" />
+          <RedditSvg className="mr-2 cursor-pointer hover:opacity-80" />
+          {/* <WhatsAppSvg className="mr-2" /> */}
         </div>
       </div>
     </div>
@@ -79,7 +81,7 @@ const LinkText: React.FC<LinkTextProp> = ({ title, url }) => {
   const route = useLocation();
   return (
     <Link to={url}>
-      <li className={clsx("my-4 font-primary text-sm", route.pathname.split("/")[2] === url.split("/")[2] && "gradient-text")}>{title}</li>
+      <li className={clsx("my-4 font-primary text-[16px]", route.pathname.split("/")[2] === url.split("/")[2] && "gradient-text")}>{title}</li>
     </Link>
   )
 }

@@ -26,7 +26,7 @@ const CustomSelect = React.forwardRef<HTMLDivElement, PropsType>(({ options, ...
     >
       {
         options.map((item, index) => (
-          <Option key={index} value={item.value}>
+          <Option key={index} value={item.value.toString()}>
             {item.title}
           </Option>
         ))

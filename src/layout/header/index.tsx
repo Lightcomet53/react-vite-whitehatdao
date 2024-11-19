@@ -4,7 +4,6 @@ import MobileView from "./mobile-view"
 import { useEffect, useState } from "react"
 import WHDFeatures from "./whd-features"
 import DAOGovernance from "./dao-governance"
-import SafetyRating from "./safety-rating"
 import Launchpad from "./launchpad"
 import NFTMarketplace from "./nft-marketplace"
 import Dex from "./dex"
@@ -26,13 +25,13 @@ export default function Header() {
     return (
         <div className="relative">
             <nav className="sticky top-0 left-0 w-full flex justify-between items-center border-b border-borderColor bg-bgColor z-[9999]">
-                <div className="lg:w-[17vw] pl-[4.3vw] lg:pl-[2.2vw] flex items-center select-none">
+                <div className="w-[20vw] 2xl:w-[17vw] pl-[4.3vw] lg:pl-[2.2vw] flex items-center select-none">
                     <Link to='/' className="flex items-center cursor-pointer lg-max:w-max">
                         <img src="/assets/images/logo.webp" alt="logo" className="w-12 lg:w-[44px] xl:w-[48px] 2xl:w-[52px]" />
                         <h4 className="ml-4 hidden md:block lg-max:text-2xl">WHD</h4>
                     </Link>
                 </div>
-                <div className="lg:w-[66vw] w-full">
+                <div className="w-[60vw] 2xl:w-[66vw]">
                     <div className="lg-max:block hidden">
                         <div className="ml-4 w-[24px] h-20 cursor-pointer relative" onClick={() => setClicked(!clicked)}>
                             <span className={"menu-top-line absolute bg-white h-[1px] w-full duration-150" + (clicked ? ' top-1/2 translate-x-[-0.5px] rotate-45' : ' top-[45%]')} />
@@ -43,7 +42,6 @@ export default function Header() {
                         <WHDFeatures />
                         <div className="w-[79.5%] flex items-center justify-evenly">
                             <DAOGovernance />
-                            <SafetyRating />
                             <Launchpad />
                             <NFTMarketplace />
                             <Dex />
@@ -51,7 +49,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="lg:w-[17vw] flex justify-end pr-[4.3vw] lg:pr-[2.2vw]">
+                <div className="w-[20vw] 2xl:w-[17vw] flex justify-end pr-[4.3vw] lg:pr-[2.2vw]">
                     <ConnectWalletBtn />
                 </div>
             </nav>
