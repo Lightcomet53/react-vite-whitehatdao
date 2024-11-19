@@ -3,7 +3,7 @@ import CustomSelect from "@/components/common/CustomSelect";
 import GradientButton from "@/components/common/GradientButton";
 import LabelText from "@/components/common/LabelText";
 import { NoPresaleFormType } from ".";
-import React, { HtmlHTMLAttributes, SyntheticEvent } from "react";
+import React from "react";
 
 const chainOptions: { title: string, value: string }[] = [
   { title: "A", value: "a" },
@@ -41,7 +41,7 @@ const TokenInfo: React.FC<PropsType> = ({ form, setForm }) => {
       <h5>TOKEN INFORMATION</h5>
       <div className="mb-28 mt-5">
         <LabelText>Select Chain</LabelText>
-        <CustomSelect onChange={(value) => handleSelectChange("chain", value)} options={chainOptions} label="Select chain to launch" />
+        <CustomSelect onChange={(value) => handleSelectChange("chain", value || '')} options={chainOptions} label="Select chain to launch" />
       </div>
       <div className="mb-5">
         <LabelText>Token Name</LabelText>
@@ -53,7 +53,7 @@ const TokenInfo: React.FC<PropsType> = ({ form, setForm }) => {
       </div>
       <div className="mb-5">
         <LabelText>Decimals</LabelText>
-        <CustomSelect options={decimalOptions} onChange={value => handleSelectChange("decimals", value)} />
+        <CustomSelect options={decimalOptions} onChange={value => handleSelectChange("decimals", value || '')} />
       </div>
       <div className="mb-10">
         <LabelText>Max Supply</LabelText>

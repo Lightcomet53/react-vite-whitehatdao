@@ -120,7 +120,7 @@ const TokenInfo: React.FC<PropsType> = ({form, setForm}) => {
         </div>
       </div>
       <div className="mb-5">
-        <CustomSelect onChange={value => handleSelectChange("dex", value)} options={dexOptions} label="Select Dex" />
+        <CustomSelect onChange={value => handleSelectChange("dex", value || '')} options={dexOptions} label="Select Dex" />
       </div>
       <div className="mb-5">
         <LabelText>Tags - Max 2 tags</LabelText>

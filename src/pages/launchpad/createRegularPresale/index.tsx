@@ -26,7 +26,7 @@ const initialForm: RegularPresaleFormType = {
 const CreateRegularPresale: React.FC = () => {
   const [form, setForm] = useState<RegularPresaleFormType>({ ...initialForm })
   return (
-    <div className="h-[calc(100vh-174px)] overflow-y-scroll pb-3">
+    <div className="h-[calc(100vh-178px)] overflow-y-scroll pb-3">
       <div className="bg-lightColor py-10 px-5 rounded-lg flex">
         <TokenInfo form={form} setForm={setForm} />
         <Preview form={form} />

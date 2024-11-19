@@ -45,7 +45,7 @@ const TokenInfo:  React.FC<PropsType> = ({ form, setForm }) => {
       <h5>TOKEN INFORMATION</h5>
       <div className="my-5">
         <LabelText>Select Chain</LabelText>
-        <CustomSelect onChange={(value) => handleSelectChange("chain", value)} options={chainOptions} label="Select chain to launch" />
+        <CustomSelect onChange={(value) => handleSelectChange("chain", value || '')} options={chainOptions} label="Select chain to launch" />
       </div>
       <GradientButton className="mb-8">Fair Launch Presale</GradientButton>
       <div className="mb-5">
@@ -58,7 +58,7 @@ const TokenInfo:  React.FC<PropsType> = ({ form, setForm }) => {
       </div>
       <div className="mb-5">
         <LabelText>Decimals</LabelText>
-        <CustomSelect options={decimalOptions} onChange={value => handleSelectChange("decimals", value)} />
+        <CustomSelect options={decimalOptions} onChange={value => handleSelectChange("decimals", value || '')} />
       </div>
       <div className="mb-10">
         <LabelText>Max Supply</LabelText>
