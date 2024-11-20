@@ -2,6 +2,7 @@ import BitRivals from "@/pages/launchpad/BitRivals";
 import LeftSidebar from "./LeftSideBar";
 import RightSidebar from "./RightSideBar";
 import Transactions from "./Transactions";
+import TradingViewWidget from "@/components/trading-view";
 
 const ManagePosition: React.FC = () => {
   return (
@@ -11,7 +12,9 @@ const ManagePosition: React.FC = () => {
         <div className="pt-3 w-full px-4">
           <BitRivals />
           <div className="h-[calc(100vh-177px)] overflow-y-scroll -mx-4">
-            <div className="h-[500px]"></div>
+            <div className="h-[500px] mb-12">
+              <TradingViewWidget />
+            </div>
             <Transactions />
           </div>
         </div>
