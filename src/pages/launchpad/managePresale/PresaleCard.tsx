@@ -1,4 +1,3 @@
-import GradientButton from '@/components/common/GradientButton'
 import DownloadSvg from '@/components/icons/Download-svg'
 import SettingSvg from '@/components/icons/Setting-svg'
 import clsx from 'clsx'
@@ -58,7 +57,7 @@ const PresaleCard: React.FC<PresaleCardType> = props => {
           {/* <p className="text-[11.5px]">Spots Left 2499990</p> */}
         </div>
       </div>
-      <div className='flex justify-between -mx-1'>
+      <div className='flex justify-between flex-wrap gap-1 -mx-1'>
         <div className='flex items-center bg-bgColor px-2 py-1 rounded-md -mr-1 cursor-pointer' onClick={handleClickManage}>
           <SettingSvg />
           <span className='text-[11px] ml-1'>Manage Presale</span>

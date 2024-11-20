@@ -54,11 +54,11 @@ const NFTCard: React.FC<NFTCardType> = props => {
             <span className='text-[12px]'>6:23:32:44</span>
           </div>
           <div>
-            <div className='flex'>
-              <span className='rounded-md px-2 border border-[#915e11] ml-1'>
+            <div className='flex gap-1'>
+              <span className='rounded-sm px-2 border border-[#915e11]'>
                 DAO
               </span>
-              <span className='rounded-md px-2 border border-[#915e11] ml-1'>
+              <span className='rounded-sm px-2 border border-[#915e11]'>
                 Defi
               </span>
             </div>

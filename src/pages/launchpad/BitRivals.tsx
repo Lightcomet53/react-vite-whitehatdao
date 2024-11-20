@@ -28,11 +28,11 @@ const BitRivals: React.FC = () => {
           <IconTrendingUp className='ml-3 mr-8 w-[30px]' />
         </div>
         <div className='flex justify-between overflow-hidden pb-2'>
-          <Marquee>
+          <Marquee pauseOnHover={true}>
             {bitArr.map((item: bitType) => (
               <div
                 key={item.name}
-                className='flex items-center mr-10 bg-[#15131D] pr-2 rounded-[320px]'
+                className='flex items-center mr-12 bg-[#15131D] pr-2 rounded-[320px] cursor-pointer'
               >
                 <div>
                   <div className='w-[24px] h-[24px] text-[12px] rounded-full flex justify-center items-center text-white'>
