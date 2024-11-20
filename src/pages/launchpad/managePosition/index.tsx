@@ -12,7 +12,7 @@ const ManagePosition: React.FC = () => {
         <div className="pt-3 w-full px-4">
           <BitRivals />
           <div className="h-[calc(100vh-177px)] overflow-y-scroll -mx-4">
-            <div className="h-[500px] mb-12">
+            <div className="h-[500px] mb-4">
               <TradingViewWidget />
             </div>
             <Transactions />
