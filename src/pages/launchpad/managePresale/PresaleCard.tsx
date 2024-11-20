@@ -25,7 +25,7 @@ const PresaleCard: React.FC<PresaleCardType> = props => {
     }
   }
 
-  const handleClickTrade = () => {
+  const handleClickManage = () => {
     navigate('/manage-position')
   }
 
@@ -59,7 +59,7 @@ const PresaleCard: React.FC<PresaleCardType> = props => {
         </div>
       </div>
       <div className='flex justify-between -mx-1'>
-        <div className='flex items-center bg-bgColor px-2 py-1 rounded-md -mr-1'>
+        <div className='flex items-center bg-bgColor px-2 py-1 rounded-md -mr-1 cursor-pointer' onClick={handleClickManage}>
           <SettingSvg />
           <span className='text-[11px] ml-1'>Manage Presale</span>
         </div>
