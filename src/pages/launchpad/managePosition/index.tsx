@@ -7,9 +7,9 @@ import TradingViewWidget from "@/components/trading-view";
 const ManagePosition: React.FC = () => {
   return (
     <>
-      <div className="flex 2xl:h-[calc(100vh-85px)] xl:h-[calc(100vh-83px)] sm:h-[calc(100vh-80px)] h-[calc(100vh-63px)] justify-between">
+      <div className='flex 2xl:h-[calc(100vh-85px)] xl:h-[calc(100vh-83px)] sm:h-[calc(100vh-80px)] h-[calc(100vh-63px)] justify-between'>
         <LeftSidebar />
-        <div className="pt-3 w-full px-4">
+        <div className='pt-3 px-4 w-[60vw] lg:w-[66vw] border-borderColor border-r '>
           <BitRivals />
           <div className="h-[calc(100vh-177px)] overflow-y-scroll -mx-4">
             <div className="h-[500px] mb-4">
@@ -23,4 +23,4 @@ const ManagePosition: React.FC = () => {
     </>
   )
 }
-export default ManagePosition;
+export default ManagePosition

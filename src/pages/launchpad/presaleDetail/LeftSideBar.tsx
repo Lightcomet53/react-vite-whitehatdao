@@ -6,7 +6,7 @@ import { Button } from "@material-tailwind/react";
 
 const LeftSidebar: React.FC = () => {
   return (
-    <div className="py-8 border-r pt-[100px] border-r-borderColor relative">
+    <div className="py-8 border-r pt-[100px] border-r-borderColor relative w-[20vw] lg:w-[17vw]">
       <h5 className="bg-[#222227] p-3 text-center">dogwifhat</h5>
       <div className="px-3 flex flex-col items-center w-[17vw]">
         <img src="/assets/images/avatars/dog.jpg" alt="avatar" className="w-[185px] h-[180px] my-5" />

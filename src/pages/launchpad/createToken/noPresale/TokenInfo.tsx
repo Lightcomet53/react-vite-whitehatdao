@@ -49,7 +49,7 @@ const TokenInfo: React.FC<PropsType> = ({ form, setForm }) => {
       </div>
       <div className="mb-5">
         <LabelText>Symbol (Max 4)</LabelText>
-        <CustomInput type="number" max={4} min={0} name="symbol" onChange={handleInputChange} placeholder="Enter Token symbol" />
+        <CustomInput name="symbol" onChange={handleInputChange} placeholder="Enter Token symbol" />
       </div>
       <div className="mb-5">
         <LabelText>Decimals</LabelText>

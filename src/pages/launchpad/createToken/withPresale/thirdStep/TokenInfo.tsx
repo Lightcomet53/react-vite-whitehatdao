@@ -70,7 +70,7 @@ const TokenInfo: React.FC<PropsType> = ({form, setForm}) => {
       </div>
       <div className="mb-5">
         <LabelText>Symbol (Max 4)</LabelText>
-        <CustomInput type="number" min={0} max={4} name="symbol" placeholder="Enter Token symbol" />
+        <CustomInput name="symbol" placeholder="Enter Token symbol" />
       </div>
       <div className="mb-5">
         <LabelText>Contract Address</LabelText>
@@ -85,7 +85,7 @@ const TokenInfo: React.FC<PropsType> = ({form, setForm}) => {
         <CustomTextarea placeholder="Enter project description" />
       </div>
       <div className="mb-5">
-        <LabelText>Socials</LabelText>
+        <LabelText>Socials (Optional)</LabelText>
         <CustomInput className="mb-3" placeholder="Website URL" />
         <CustomInput className="mb-3" placeholder="Twitter URL" />
         <CustomInput className="mb-3" placeholder="Telegram Group URL" />

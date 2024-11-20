@@ -7,7 +7,7 @@ import { linkOtherSite } from "@/components/utils/func";
 
 interface PropsType {
   name: string;
-  symbol: number
+  symbol: string
 }
 
 const PreviewBox: React.FC<PropsType> = ({name, symbol}) => {

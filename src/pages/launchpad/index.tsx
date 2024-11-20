@@ -10,11 +10,11 @@ const LaunchPad: React.FC = () => {
       <div className="border-borderColor border-r">
         <LeftSidebar />
       </div>
-      <div className="pt-3 w-full px-4">
+      <div className="pt-3 px-4 w-[60vw] lg:w-[66vw] border-borderColor border-r">
         <BitRivals />
         <Outlet />
       </div>
-      <div className="border-borderColor border-l">
+      <div>
         <RightSidebar />
       </div>
       <Popup />

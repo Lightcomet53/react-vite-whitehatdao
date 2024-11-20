@@ -4,7 +4,7 @@ import TokenInfo from "./TokenInfo";
 
 export interface ThirdFormProps {
   name: string;
-  symbol: number;
+  symbol: string;
   decimals: number;
   maxSupply: string;
   image: string;
