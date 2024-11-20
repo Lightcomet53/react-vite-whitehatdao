@@ -1,7 +1,8 @@
-import BitRivals from '@/pages/launchpad/BitRivals'
-import LeftSidebar from './LeftSideBar'
-import RightSidebar from './RightSideBar'
-import Transactions from './Transactions'
+import BitRivals from "@/pages/launchpad/BitRivals";
+import LeftSidebar from "./LeftSideBar";
+import RightSidebar from "./RightSideBar";
+import Transactions from "./Transactions";
+import TradingViewWidget from "@/components/trading-view";
 
 const ManagePosition: React.FC = () => {
   return (
@@ -10,8 +11,10 @@ const ManagePosition: React.FC = () => {
         <LeftSidebar />
         <div className='pt-3 px-4 w-[60vw] lg:w-[66vw] border-borderColor border-r '>
           <BitRivals />
-          <div className='h-[calc(100vh-177px)] overflow-y-scroll -mx-4'>
-            <div className='h-5/6'></div>
+          <div className="h-[calc(100vh-177px)] overflow-y-scroll -mx-4">
+            <div className="h-[500px] mb-4">
+              <TradingViewWidget />
+            </div>
             <Transactions />
           </div>
         </div>
