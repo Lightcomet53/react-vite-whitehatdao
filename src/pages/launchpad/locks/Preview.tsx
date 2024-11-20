@@ -6,7 +6,7 @@ const Preview: React.FC = () => {
   return (
     <div className="w-1/2 px-8">
       <h5 className="mb-5">PREVIEW</h5>
-      <PreviewBox name="" symbol={0} />
+      <PreviewBox name="" symbol={'0'} />
       <div className="bg-lighterColor mt-5 p-5 rounded-lg">
         <h6 className="text-[18px] mb-10">Token Information</h6>
         <PreviewText name="Name" value={<span></span>} />
