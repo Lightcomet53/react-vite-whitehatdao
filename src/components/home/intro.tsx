@@ -70,13 +70,13 @@ export default function Intro() {
                         <div className="border-t border-borderColor">
                             <div className="flex justify-between items-center w-full xl:w-1/2 ml-auto px-3 py-2 xl:pl-0">
                                 <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/643550c922d6d3e0dcffd28b_ico-indicator.svg" loading="lazy" alt="" className="w-[6px]" />
-                                <p className="text-white">AI SECURITY AUDIT</p>
+                                <p className="text-white">LAUNCHPAD</p>
                             </div>
                         </div>
                         <div className="border-t border-borderColor">
                             <div className="flex justify-between items-center w-full xl:w-1/2 ml-auto px-3 py-2 xl:pl-0">
                                 <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/643550c922d6d3e0dcffd28b_ico-indicator.svg" loading="lazy" alt="" className="w-[6px]" />
-                                <p className="text-white">SAFETY RATING</p>
+                                <p className="text-white">WEB3 EDUCATION</p>
                             </div>
                         </div>
                         <div className="absolute top-full left-0 w-full border-t border-borderColor pr-4 py-2 text-right">

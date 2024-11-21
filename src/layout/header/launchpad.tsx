@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Launchpad() {
     return (
-        <Link to='/launchpad/all-presales'>
+        <Link to='/launchpad'>
             <div className="relative group/whole">
                 <div className="py-8 flex items-center gap-2 cursor-pointer group/item relative">
                     Launchpad

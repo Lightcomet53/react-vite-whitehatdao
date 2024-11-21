@@ -25,7 +25,7 @@ export default function MobileView() {
                             <div className="flex items-center mr-3">
                                 <img src="/assets/images/logo.webp" alt="" className="mr-1" width={32} height={32} />
                                 <p>
-                                    Sonicity DEX
+                                    DEX
                                 </p>
                             </div>
                             <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/645e3d7ca7fd751544d4e7e8_icon-link-arrow-simple.svg" loading="lazy" alt="Simple Link Arrow Icon" className="w-3" />
@@ -49,7 +49,7 @@ export default function MobileView() {
                             <div className="flex items-center mr-3">
                                 <img src="/assets/images/logo.webp" alt="" className="mr-1" width={32} height={32} />
                                 <p>
-                                    Sonicity Launchpad
+                                    Launchpad
                                 </p>
                             </div>
                             <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/645e3d7ca7fd751544d4e7e8_icon-link-arrow-simple.svg" loading="lazy" alt="Simple Link Arrow Icon" className="w-3" />
@@ -61,7 +61,7 @@ export default function MobileView() {
                             <div className="flex items-center mr-3">
                                 <img src="/assets/images/logo.webp" alt="" className="mr-1" width={32} height={32} />
                                 <p>
-                                    Sonicity NFT Marketplace
+                                    NFT Marketplace
                                 </p>
                             </div>
                             <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/645e3d7ca7fd751544d4e7e8_icon-link-arrow-simple.svg" loading="lazy" alt="Simple Link Arrow Icon" className="w-3" />

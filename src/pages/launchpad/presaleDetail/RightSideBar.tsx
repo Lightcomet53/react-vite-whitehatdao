@@ -3,6 +3,7 @@ import BorderBox from './BorderBox'
 import { Button, Progress } from '@material-tailwind/react'
 import DocSvg from '@/components/icons/Doc-svg'
 import VectorSvg from '@/components/icons/Vector-svg'
+import { IconArrowsUpDown } from '@tabler/icons-react'
 
 const RightSidebar: React.FC = () => {
   return (
@@ -28,17 +29,20 @@ const RightSidebar: React.FC = () => {
           <p className='text-gray-600'>PRICE</p>
           <p>0.0 1012 vETH</p>
         </BorderBox>
-        <div className='bg-darkPurple flex justify-between pl-5 pr-10 rounded-lg py-2 mb-3'>
+        <div className='bg-darkPurple flex justify-between pl-5 pr-10 rounded-lg py-2 mb-1'>
           <span>0</span>
           <span>vETH</span>
         </div>
-        <div className='bg-darkPurple flex justify-between pl-5 pr-10 rounded-lg py-2 mb-4'>
+        <div className='flex justify-center'>
+          <IconArrowsUpDown color='green' />
+        </div>
+        <div className='bg-darkPurple flex justify-between pl-5 pr-10 rounded-lg py-2 mb-4 mt-1'>
           <span>0</span>
           <span>APE</span>
         </div>
         <div className='w-full px-5 mb-3 border-r border-l border-borderColor'>
           <Button fullWidth color='green'>
-            Buy
+            SWAP
           </Button>
         </div>
         <BorderBox className='mb-5'>

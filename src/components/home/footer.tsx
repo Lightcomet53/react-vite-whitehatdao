@@ -7,8 +7,15 @@ import {
 } from '@tabler/icons-react'
 import ContainerBig from '../container-big'
 import { Link } from 'react-router-dom'
+import { Dialog } from '@material-tailwind/react'
+import ContactForm from '../common/ContactForm'
+import { useState } from 'react'
 
 export default function Footer () {
+  const [contactVisible, setContactVisible] = useState<boolean>(false)
+  const handleOpenContact = () => {
+    setContactVisible(!contactVisible)
+  }
   return (
     <div className='bg-bgColor relative z-[99]'>
       <div className='w-full lg:w-[93.2vw] mx-auto h-[1.2vw] border-t border-borderColor relative'>
@@ -62,28 +69,30 @@ export default function Footer () {
                   <span className='absolute top-0 -translate-y-1/2 left-0 w-[1px] h-[0.707rem] rotate-45 bg-borderColor' />
                   <span className='absolute bottom-0 translate-y-1/2 right-0 w-[1px] h-[0.707rem] rotate-45 bg-borderColor' />
                 </span>
-                <Link to='/launchpad/contact-us'>
-                  <span className='py-1 px-10 text-white text-lg relative cursor-pointer hover:text-opacity-60 duration-200 inline-block'>
-                    Hire Us
-                    <span className='absolute -top-1 left-1 w-full h-[1px] bg-borderColor' />
-                    <span className='absolute bottom-1 -right-1 w-[1px] h-full bg-borderColor' />
-                    <span className='absolute -bottom-1 right-1 w-full h-[1px] bg-borderColor' />
-                    <span className='absolute -bottom-1 -left-1 w-[1px] h-3/4 bg-borderColor' />
-                    <span className='absolute top-0 -translate-y-1/2 left-0 w-[1px] h-[0.707rem] rotate-45 bg-borderColor' />
-                    <span className='absolute bottom-0 translate-y-1/2 right-0 w-[1px] h-[0.707rem] rotate-45 bg-borderColor' />
-                  </span>
-                </Link>
-                <Link to='/launchpad/contact-us'>
-                  <span className='py-1 px-10 text-white text-lg relative cursor-pointer hover:text-opacity-60 duration-200 inline-block'>
-                    Apply as Dev
-                    <span className='absolute -top-1 left-1 w-full h-[1px] bg-borderColor' />
-                    <span className='absolute bottom-1 -right-1 w-[1px] h-full bg-borderColor' />
-                    <span className='absolute -bottom-1 right-1 w-full h-[1px] bg-borderColor' />
-                    <span className='absolute -bottom-1 -left-1 w-[1px] h-3/4 bg-borderColor' />
-                    <span className='absolute top-0 -translate-y-1/2 left-0 w-[1px] h-[0.707rem] rotate-45 bg-borderColor' />
-                    <span className='absolute bottom-0 translate-y-1/2 right-0 w-[1px] h-[0.707rem] rotate-45 bg-borderColor' />
-                  </span>
-                </Link>
+                <span
+                  className='py-1 px-10 text-white text-lg relative cursor-pointer hover:text-opacity-60 duration-200 inline-block'
+                  onClick={handleOpenContact}
+                >
+                  Hire Us
+                  <span className='absolute -top-1 left-1 w-full h-[1px] bg-borderColor' />
+                  <span className='absolute bottom-1 -right-1 w-[1px] h-full bg-borderColor' />
+                  <span className='absolute -bottom-1 right-1 w-full h-[1px] bg-borderColor' />
+                  <span className='absolute -bottom-1 -left-1 w-[1px] h-3/4 bg-borderColor' />
+                  <span className='absolute top-0 -translate-y-1/2 left-0 w-[1px] h-[0.707rem] rotate-45 bg-borderColor' />
+                  <span className='absolute bottom-0 translate-y-1/2 right-0 w-[1px] h-[0.707rem] rotate-45 bg-borderColor' />
+                </span>
+                <span
+                  className='py-1 px-10 text-white text-lg relative cursor-pointer hover:text-opacity-60 duration-200 inline-block'
+                  onClick={handleOpenContact}
+                >
+                  Apply as Dev
+                  <span className='absolute -top-1 left-1 w-full h-[1px] bg-borderColor' />
+                  <span className='absolute bottom-1 -right-1 w-[1px] h-full bg-borderColor' />
+                  <span className='absolute -bottom-1 right-1 w-full h-[1px] bg-borderColor' />
+                  <span className='absolute -bottom-1 -left-1 w-[1px] h-3/4 bg-borderColor' />
+                  <span className='absolute top-0 -translate-y-1/2 left-0 w-[1px] h-[0.707rem] rotate-45 bg-borderColor' />
+                  <span className='absolute bottom-0 translate-y-1/2 right-0 w-[1px] h-[0.707rem] rotate-45 bg-borderColor' />
+                </span>
               </div>
               <div className='flex justify-center gap-4 lg:mb-0 mb-6'>
                 <Link to='https://x.com/White_Hat_DAO' target='_blank'>
@@ -128,6 +137,9 @@ export default function Footer () {
           © 2024 ALL RIGHTS RESERVED BY WHITEHATDAO.COM
         </p>
       </ContainerBig>
+      <Dialog open={contactVisible} handler={handleOpenContact}>
+        <ContactForm />
+      </Dialog>
     </div>
   )
 }

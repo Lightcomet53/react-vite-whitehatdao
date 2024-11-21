@@ -26,7 +26,7 @@ const element = createRoutesFromElements(
         <Route path="/" element={<Layout />}>
             <Route path="" element={<Home />} />
             <Route path="launchpad" element={<LaunchPad />}>
-                <Route path="all-presales" element={<AllPresales />} />
+                <Route path="" element={<AllPresales />} />
                 <Route path="create-token" element={<CreateToken />}>
                     <Route path="" element={<CreateTokenList />} />
                     <Route path="with-presale" element={<WithPresale />}>
@@ -51,7 +51,7 @@ const element = createRoutesFromElements(
                 <Route path="kol-groups" element={<ContactUs />} />
                 <Route path="contact-us" element={<ContactUs />} />
             </Route>
-            <Route path="presale-detail/:id" element={<PresaleDetail />} />
+            <Route path="presale-detail/:id" element={<PresaleDetail/>} />
             <Route path="manage-position" element={<ManagePosition />} />
         </Route>
     </>
