@@ -7,7 +7,7 @@ import VectorSvg from '@/components/icons/Vector-svg'
 const RightSidebar: React.FC = () => {
   return (
     <div className='mb-2'>
-      <div className=' w-[20vw] lg:w-[17vw] px-2 pt-10 overflow-y-scroll h-full'>
+      <div className='w-full lg:w-[17vw] px-2 pt-10 overflow-y-scroll h-full'>
         <div className='bg-darkPurple flex mb-8 justify-center items-center rounded-md py-1'>
           <div className='w-[11px] h-[11px] bg-greenColor rounded-full'></div>
           <p className='ml-3'>LIVE PRESALE</p>

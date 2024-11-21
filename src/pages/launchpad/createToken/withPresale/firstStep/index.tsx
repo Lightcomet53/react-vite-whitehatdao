@@ -11,7 +11,7 @@ export interface FirstFormType {
 
 const initialForm: FirstFormType = {
   name: "",
-  symbol: 0,
+  symbol: "",
   decimals: 6,
   maxSupply: ""
 }
@@ -19,7 +19,7 @@ const WithPresaleFirstStep: React.FC = () => {
   const [form, setForm] = useState<FirstFormType>({ ...initialForm })
   
   return (
-    <div className="bg-lightColor py-10 px-5 rounded-lg flex">
+    <div className="bg-lightColor flex-wrap py-10 px-5 rounded-lg flex">
       <TokenInfo form={form} setForm={setForm} />
       <Preview form={form} />
     </div>

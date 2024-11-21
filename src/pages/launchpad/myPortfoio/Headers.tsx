@@ -16,7 +16,7 @@ const Headers: React.FC = () => {
 
   return (
     <div className="flex justify-between pr-10">
-      <Tabs value={selected} onChange={handleChange} className="w-[400px]">
+      <Tabs value={selected} onChange={handleChange} className="w-[400px] m-auto md:m-0">
         <TabsHeader
           className="rounded-none bg-transparent p-0 text-borderColor"
           indicatorProps={{
@@ -29,7 +29,7 @@ const Headers: React.FC = () => {
           <Tab activeClassName="active-orange" className="pb-2 text-gray-500" value="History" onClick={handleNavigate("/history")}>History</Tab>
         </TabsHeader>
       </Tabs>
-      <h5>All Networks</h5>
+      <h5 className="hidden md:block">All Networks</h5>
     </div>
   )
 }

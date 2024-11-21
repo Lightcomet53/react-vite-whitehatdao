@@ -17,6 +17,9 @@ module.exports = withMT({
         greenColor: "#00D26C",
         textDark: "#797979"
       },
+      boxShadow: {
+        defaultShadow: "0 0 5px white"
+      },
       fontFamily: {
         primary: ["Cascadia Code"],
         title: ['Violetsans', 'Arial', 'sans-serif'],

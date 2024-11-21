@@ -13,7 +13,7 @@ export interface ThirdFormProps {
 
 const initialForm: ThirdFormProps = {
   name: "",
-  symbol: 0,
+  symbol: "",
   decimals: 6,
   maxSupply: "",
   image: "",
@@ -23,7 +23,7 @@ const initialForm: ThirdFormProps = {
 const WithPresaleThirdStep: React.FC = () => {
   const [form, setForm] = useState<ThirdFormProps>({ ...initialForm })
   return (
-    <div className="bg-lightColor py-10 px-5 rounded-lg flex">
+    <div className="bg-lightColor py-10 px-5 rounded-lg flex flex-wrap">
       <TokenInfo setForm={setForm} form={form} />
       <Preview form={form} />
     </div>
