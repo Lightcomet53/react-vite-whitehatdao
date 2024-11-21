@@ -11,7 +11,7 @@ const NFTList: React.FC<PropsType> = props => {
     <div className="flex flex-wrap overflow-y-scroll h-[calc(100vh-318.55px)] -mx-5">
       {
         presaleData.filter((item: NFTCardType) => item.step === props.step).map((item: NFTCardType, index: number) => (
-          <div key={index} className={"px-5 w-1/3"}>
+          <div key={index} className={"px-5 w-full md:w-1/2 2xl:w-1/3"}>
             <NFTCard {...item} />
           </div>
 

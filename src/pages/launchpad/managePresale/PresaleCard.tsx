@@ -57,14 +57,14 @@ const PresaleCard: React.FC<PresaleCardType> = props => {
           {/* <p className="text-[11.5px]">Spots Left 2499990</p> */}
         </div>
       </div>
-      <div className='flex justify-between flex-wrap gap-1 -mx-1'>
-        <div className='flex items-center bg-bgColor px-2 py-1 rounded-md -mr-1 cursor-pointer' onClick={handleClickManage}>
+      <div className='lg:flex justify-between flex-wrap gap-1 -mx-1'>
+        <button className='flex w-full lg:w-auto justify-center items-center bg-bgColor rounded-md -mr-1 cursor-pointer' onClick={handleClickManage} style={{padding: "4px 5px"}}>
           <SettingSvg />
-          <span className='text-[11px] ml-1'>Manage Presale</span>
-        </div>
+          <span className='text-[13px] ml-1'>Manage Presale</span>
+        </button>
         {/* <GradientButton className="text-[13px] rounded-md py-0" style={{padding: "4px 5px"}} onClick={handleClickTrade}>Trade Live on Dex</GradientButton> */}
         <button
-          className='text-[13px] rounded-md font-primary py-0 bg-white text-black flex items-center'
+          className='text-[13px] w-full lg:w-auto justify-center mt-3 lg:mt-0 rounded-md font-primary bg-white text-black flex items-center'
           style={{ padding: '4px 5px' }}
         >
           <DownloadSvg className='mr-2 mt-[1px]' /> Investor CSV File

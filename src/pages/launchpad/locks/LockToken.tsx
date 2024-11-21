@@ -14,7 +14,7 @@ const lockDurationOptions: { title: string, value: string }[] = [
 const LockToken: React.FC = () => {
 
   return (
-    <div className="w-1/2 px-8">
+    <div className="w-full md:w-1/2 mb-10 md:mb-0 px-8">
       <h5 className="mb-6">LOCK TOKEN</h5>
       <div className="mb-5">
         <LabelText>Token Contract Address</LabelText>

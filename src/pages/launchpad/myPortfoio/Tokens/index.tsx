@@ -7,7 +7,7 @@ const Tokens: React.FC = () => {
   return (
     <div>
       <div className="flex justify-between py-6">
-        <h4 className="ml-16">Assets</h4>
+        <h4 className="ml-2 md:ml-16">Assets</h4>
         <div className="flex">
           <ButtonGroup>
             <Button>By App</Button>
