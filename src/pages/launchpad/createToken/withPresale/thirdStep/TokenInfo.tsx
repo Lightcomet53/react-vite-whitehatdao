@@ -61,7 +61,7 @@ const TokenInfo: React.FC<PropsType> = ({form, setForm}) => {
     })
   }
   return (
-    <div className="w-1/2 px-8">
+    <div className="w-full md:w-1/2 mb-20 md:mb-0 px-8">
       <h5>TOKEN INFORMATION</h5>
       <GradientButton className="mt-10 mb-8">Fair Launch Presale</GradientButton>
       <div className="mb-5">

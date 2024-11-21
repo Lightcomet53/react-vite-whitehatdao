@@ -15,7 +15,7 @@ export interface RegularPresaleFormType {
 
 const initialForm: RegularPresaleFormType = {
   name: "",
-  symbol: 0,
+  symbol: "",
   decimals: 8,
   maxSupply: "",
   contractAddress: "",
@@ -27,7 +27,7 @@ const CreateRegularPresale: React.FC = () => {
   const [form, setForm] = useState<RegularPresaleFormType>({ ...initialForm })
   return (
     <div className="h-[calc(100vh-178px)] overflow-y-scroll pb-3">
-      <div className="bg-lightColor py-10 px-5 rounded-lg flex">
+      <div className="bg-lightColor py-10 px-5 rounded-lg flex flex-wrap">
         <TokenInfo form={form} setForm={setForm} />
         <Preview form={form} />
       </div>

@@ -11,7 +11,7 @@ export interface NoPresaleFormType {
 
 const initialForm: NoPresaleFormType = {
   name: "",
-  symbol: 0,
+  symbol: "",
   decimals: 8,
   maxSupply: ""
 }
@@ -19,7 +19,7 @@ const initialForm: NoPresaleFormType = {
 const NoPresale: React.FC = () => {
   const [form, setForm] = useState<NoPresaleFormType>({ ...initialForm })
   return (
-    <div className="bg-lightColor py-10 px-5 rounded-lg flex h-[calc(100vh-176px)] overflow-y-scroll">
+    <div className="bg-lightColor flex-wrap py-10 px-5 rounded-lg flex h-[calc(100vh-176px)] overflow-y-scroll">
       <TokenInfo form={form} setForm={setForm} />
       <Preview form={form} />
     </div>

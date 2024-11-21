@@ -37,7 +37,7 @@ const TokenInfo: React.FC<PropsType> = ({ form, setForm }) => {
   }
 
   return (
-    <div className="w-1/2 px-8">
+    <div className="w-full md:w-1/2 px-8 mb-10 md:mb-0">
       <h5>TOKEN INFORMATION</h5>
       <div className="mb-28 mt-5">
         <LabelText>Select Chain</LabelText>

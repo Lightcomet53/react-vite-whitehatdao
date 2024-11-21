@@ -4,7 +4,7 @@ import PreviewText from "@/components/common/PreviewText";
 
 const Preview: React.FC = () => {
   return (
-    <div className="w-1/2 px-8">
+    <div className="w-full md:w-1/2 px-8">
       <h5 className="mb-5">PREVIEW</h5>
       <PreviewBox name="" symbol={'0'} />
       <div className="bg-lighterColor mt-5 p-5 rounded-lg">

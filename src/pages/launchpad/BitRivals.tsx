@@ -20,7 +20,7 @@ const BitRivals: React.FC = () => {
   return (
     <div className='flex justify-between p-5 px-0 w-full mb-2 bitribals'>
       <div className='flex items-center w-full'>
-        <div className='flex items-center'>
+        <div className='items-center hidden xl:flex'>
           <div className='flex py-2 px-3 items-center justify-center w-[170px] bg-[#15131D] rounded-[64px]'>
             {/* <img src="/assets/images/bit_rials.png" alt="bit-rials" width={28.8} height={28.8} className="rounded-full" /> */}
             <h6 className='font-bold text-greenColor'>Upcoming Presales</h6>
