@@ -55,10 +55,10 @@ const NFTCard: React.FC<NFTCardType> = props => {
           </div>
           <div>
             <div className='flex gap-1'>
-              <span className='rounded-sm px-2 border border-[#915e11]'>
+              <span className='rounded-sm text-[11px] px-2 border border-green-700 bg-green-700'>
                 DAO
               </span>
-              <span className='rounded-sm px-2 border border-[#915e11]'>
+              <span className='rounded-sm text-[11px] px-2 border border-purple-700 bg-purple-700'>
                 Defi
               </span>
             </div>
@@ -66,7 +66,7 @@ const NFTCard: React.FC<NFTCardType> = props => {
         </div>
         <div className='flex items-center mb-4 mt-7'>
           <div className='relative'>
-            {/* <img src="/assets/images/status/1.png" alt="status" className="absolute -top-[10px] -left-[10px] w-[28px] h-[28px]" /> */}
+            <img src="/assets/images/status/1.png" alt="status" className="absolute -top-[10px] -left-[10px] w-[28px] h-[28px]" />
             <img
               src={props.avatar}
               alt='avatar'

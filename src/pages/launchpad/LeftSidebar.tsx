@@ -10,7 +10,7 @@ interface listType {
 }
 
 const listArrOne: listType[] = [
-  { title: "All Presales", url: "/launchpad/all-presales" },
+  { title: "All Presales", url: "/launchpad" },
   { title: "Create Token", url: "/launchpad/create-token" },
 ];
 
@@ -63,13 +63,13 @@ const LeftSidebar: React.FC = () => {
           <LinkText title="Contact Us" url="/launchpad/contact-us" />
         </ul>
         <div className="flex">
-          <Link to="https://x.com/White_Hat_DAO">
+          <Link to="https://x.com/White_Hat_DAO" target="_blank">
             <TwitterSvg className="mr-2 w-7 h-7 cursor-pointer hover:opacity-80 duration-150" />
           </Link>
-          <Link to="http://t.me/whitehatdao">
+          <Link to="http://t.me/whitehatdao" target="_blank">
             <TelegramSvg className="mr-2 w-7 h-7 cursor-pointer hover:opacity-80 duration-150" />
           </Link>
-          <Link to="http://discord.gg/sHbRMxev3p">
+          <Link to="http://discord.gg/sHbRMxev3p" target="_blank">
             <DiscordSvg className="mr-2 w-7 h-7 cursor-pointer hover:opacity-80 duration-150" />
           </Link>
         </div>

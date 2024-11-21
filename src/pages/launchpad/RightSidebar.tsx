@@ -14,6 +14,7 @@ import {
 } from '@material-tailwind/react'
 import { IconCaretUpFilled } from '@tabler/icons-react'
 import clsx from 'clsx'
+import Pagination from '@/components/common/Pagination'
 
 interface listType {
   image: string
@@ -122,39 +123,44 @@ const RightSidebar: React.FC = () => {
 
 const ContentList = ({ options }: { options: listType[] }) => {
   return (
-    <List className='my-2 p-0'>
-      {options.map((item: listType, index: number) => (
-        <ListItem
-          key={index}
-          className={clsx(
-            'group rounded-none py-1.5 px-3 text-sm font-normal text-blue-gray-700 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white',
-            index % 2 === 1 && 'bg-[#101014]'
-          )}
-        >
-          <ListItemPrefix>
-            <img
-              src={item.image}
-              alt='prefix-image'
-              width={25}
-              height={25}
-              className='rounded-full'
-            />
-          </ListItemPrefix>
-          {item.title}
-          <ListItemSuffix>
-            <div className='flex items-center'>
-              <span className='text-[10px] text-[#707070] mr-3'>
-                ${item.usd.toFixed(2)}
-              </span>
-              <span className='text-[10px] text-[#35CB9E] mr-1'>
-                {item.percent.toFixed(2)}%
-              </span>
-              <IconCaretUpFilled className='w-[15px]' color='#35CB9E' />
-            </div>
-          </ListItemSuffix>
-        </ListItem>
-      ))}
-    </List>
+    <>
+      <List className='my-2 p-0'>
+        {options.map((item: listType, index: number) => (
+          <ListItem
+            key={index}
+            className={clsx(
+              'group rounded-none py-1.5 px-3 text-sm font-normal text-blue-gray-700 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white',
+              index % 2 === 1 && 'bg-[#101014]'
+            )}
+          >
+            <ListItemPrefix>
+              <img
+                src={item.image}
+                alt='prefix-image'
+                width={25}
+                height={25}
+                className='rounded-full'
+              />
+            </ListItemPrefix>
+            {item.title}
+            <ListItemSuffix>
+              <div className='flex items-center'>
+                <span className='text-[10px] text-[#707070] mr-3'>
+                  ${item.usd.toFixed(2)}
+                </span>
+                <span className='text-[10px] text-[#35CB9E] mr-1'>
+                  {item.percent.toFixed(2)}%
+                </span>
+                <IconCaretUpFilled className='w-[15px]' color='#35CB9E' />
+              </div>
+            </ListItemSuffix>
+          </ListItem>
+        ))}
+      </List>
+      <div className='flex justify-center pt-5'>
+        <Pagination pageCount={3} nextLabel='>' previousLabel='<' />
+      </div>
+    </>
   )
 }
 

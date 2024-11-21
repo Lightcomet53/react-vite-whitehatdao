@@ -20,7 +20,7 @@ export default function MobileView() {
                     <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/64491fa5649dfb767a0c35ee_arrow-down.svg" loading="lazy" alt="" className="mr-4 group-hover/item:rotate-180 w-2" />
                 </div>
                 <div className="flex-wrap hidden group-hover/whole:flex">
-                    <Link rel="noopener noreferrer" to="/" target="_blank" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
+                    <Link rel="noopener noreferrer" to="/" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
                         <div className="flex items-center justify-between mb-2">
                             <div className="flex items-center mr-3">
                                 <img src="/assets/images/logo.webp" alt="" className="mr-1" width={32} height={32} />
@@ -32,7 +32,7 @@ export default function MobileView() {
                         </div>
                         <p className="text-[11.7px]">Coming Soon</p>
                     </Link>
-                    <Link rel="noopener noreferrer" to="/" target="_blank" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
+                    <Link rel="noopener noreferrer" to="/" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
                         <div className="flex items-center justify-between mb-2">
                             <div className="flex items-center mr-3">
                                 <img src="/assets/images/logo.webp" alt="" className="mr-1" width={32} height={32} />
@@ -44,7 +44,7 @@ export default function MobileView() {
                         </div>
                         <p className="text-[11.7px]">Coming Soon</p>
                     </Link>
-                    <Link rel="noopener noreferrer" to="/" target="_blank" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
+                    <Link rel="noopener noreferrer" to="/launchpad" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
                         <div className="flex items-center justify-between mb-2">
                             <div className="flex items-center mr-3">
                                 <img src="/assets/images/logo.webp" alt="" className="mr-1" width={32} height={32} />
@@ -52,11 +52,9 @@ export default function MobileView() {
                                     Launchpad
                                 </p>
                             </div>
-                            <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/645e3d7ca7fd751544d4e7e8_icon-link-arrow-simple.svg" loading="lazy" alt="Simple Link Arrow Icon" className="w-3" />
                         </div>
-                        <p className="text-[11.7px]">Coming Soon</p>
                     </Link>
-                    <Link rel="noopener noreferrer" to="/" target="_blank" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
+                    <Link rel="noopener noreferrer" to="/" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
                         <div className="flex items-center justify-between mb-2">
                             <div className="flex items-center mr-3">
                                 <img src="/assets/images/logo.webp" alt="" className="mr-1" width={32} height={32} />
@@ -68,7 +66,7 @@ export default function MobileView() {
                         </div>
                         <p className="text-[11.7px]">Coming Soon</p>
                     </Link>
-                    <Link rel="noopener noreferrer" to="/" target="_blank" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
+                    <Link rel="noopener noreferrer" to="/" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
                         <div className="flex items-center justify-between mb-2">
                             <div className="flex items-center mr-3">
                                 <img src="/assets/images/logo.webp" alt="" className="mr-1" width={32} height={32} />
@@ -80,7 +78,7 @@ export default function MobileView() {
                         </div>
                         <p className="text-[11.7px]">Coming Soon</p>
                     </Link>
-                    <Link rel="noopener noreferrer" to="/" target="_blank" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
+                    <Link rel="noopener noreferrer" to="/" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
                         <div className="flex items-center justify-between mb-2">
                             <div className="flex items-center mr-3">
                                 <img src="/assets/images/logo.webp" alt="" className="mr-1" width={32} height={32} />
@@ -104,28 +102,28 @@ export default function MobileView() {
                         <div className="w-max p-4 opacity-opacity1">
                             JOIN THE DAO GOVERNANCE
                         </div>
-                        <Link to="#" target="_blank" className="px-5 py-2 border-t border-borderColor flex justify-between items-center hover:opacity-70 duration-200">
+                        <Link to="#" className="px-5 py-2 border-t border-borderColor flex justify-between items-center hover:opacity-70 duration-200">
                             <div className="flex items-center gap-4 mr-14 w-max">
                                 <img src="/assets/images/dao_gov.webp" className="w-8 lg:w-10 xl:w-12 2xl:w-14" alt="" />
                                 <p className="text-white">DAO Gov</p>
                             </div>
                             <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/64491f577f22d780663c25d1_ico-arrow.svg" className="w-3 h-3" alt="" />
                         </Link>
-                        <Link to="#" target="_blank" className="px-5 py-2 border-t border-borderColor flex justify-between items-center hover:opacity-70 duration-200">
+                        <Link to="#" className="px-5 py-2 border-t border-borderColor flex justify-between items-center hover:opacity-70 duration-200">
                             <div className="flex items-center gap-4 mr-14 w-max">
                                 <img src="/assets/images/dao_senate.webp" className="w-8 lg:w-10 xl:w-12 2xl:w-14" alt="" />
                                 <p className="text-white">DAO Senate</p>
                             </div>
                             <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/64491f577f22d780663c25d1_ico-arrow.svg" className="w-3 h-3" alt="" />
                         </Link>
-                        <Link to="#" target="_blank" className="px-5 py-2 border-t border-borderColor flex justify-between items-center hover:opacity-70 duration-200">
+                        <Link to="#" className="px-5 py-2 border-t border-borderColor flex justify-between items-center hover:opacity-70 duration-200">
                             <div className="flex items-center gap-4 mr-14 w-max">
                                 <img src="/assets/images/elder_council.webp" className="w-8 lg:w-10 xl:w-12 2xl:w-14" alt="" />
                                 <p className="text-white">Elder Council</p>
                             </div>
                             <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/64491f577f22d780663c25d1_ico-arrow.svg" className="w-3 h-3" alt="" />
                         </Link>
-                        <Link to="#" target="_blank" className="px-5 py-2 border-t border-borderColor flex justify-between items-center hover:opacity-70 duration-200">
+                        <Link to="#" className="px-5 py-2 border-t border-borderColor flex justify-between items-center hover:opacity-70 duration-200">
                             <div className="flex items-center gap-4 mr-14 w-max">
                                 <img src="/assets/images/office_of_augustus.webp" className="w-8 lg:w-10 xl:w-12 2xl:w-14" alt="" />
                                 <p className="text-white">Office of Augustus</p>
@@ -137,7 +135,7 @@ export default function MobileView() {
                         <div className="w-max p-4 opacity-opacity1">
                             Active Discussions
                         </div>
-                        <Link to="#" target="_blank" className="px-5 py-2 border-t border-borderColor flex justify-between items-center hover:opacity-70 duration-200">
+                        <Link to="#" className="px-5 py-2 border-t border-borderColor flex justify-between items-center hover:opacity-70 duration-200">
                             <div className="flex items-center gap-4 mr-14 w-max">
                                 <img src="/assets/images/dao_proposals.webp" className="w-8 lg:w-10 xl:w-12 2xl:w-14" alt="" />
                                 <p className="text-white">DAO Proposals</p>
@@ -161,20 +159,13 @@ export default function MobileView() {
                     </div>
                 </div>
             </div>
+            <Link to="/launchpad">
             <div className="relative group/whole border-b border-borderColor hover:border-b-0">
                 <div className="py-4 flex justify-between items-center gap-2 cursor-pointer group/item relative">
                     Launchpad
-                    <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/64491fa5649dfb767a0c35ee_arrow-down.svg" alt="" className="mr-4 group-hover/item:rotate-180 w-2" />
-                </div>
-                <div className="hidden group-hover/whole:block border border-borderColor bg-bgColor">
-                    <div className="w-max px-6 py-4 flex justify-between items-center hover:opacity-70 duration-200">
-                        <div className="flex items-center gap-4 mr-10 w-max">
-                            <img src="https://cdn.prod.website-files.com/64354b8ce4872ad8cd1c7b04/65e19a31ef2063a786b0198c_ico-grant.svg" className="w-[18px]" alt="" />
-                            <p className="text-white">Coming Soon</p>
-                        </div>
-                    </div>
                 </div>
             </div>
+            </Link>
             <div className="border-b border-borderColor">
                 <div className="py-4 cursor-pointer">
                     NFT Market Place
