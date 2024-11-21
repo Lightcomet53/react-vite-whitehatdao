@@ -37,8 +37,8 @@ const TradingViewWidget = memo(function TradingViewWidget() {
 
     return () => {
       // Cleanup script on unmount
-      if (scriptRef.current && currentContainer) {
-        currentContainer.removeChild(scriptRef.current);
+      if (scriptRef.current) {
+        scriptRef.current.remove();
         scriptRef.current = null;
       }
     };
