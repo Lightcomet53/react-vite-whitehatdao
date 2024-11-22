@@ -14,7 +14,7 @@ export default function WHDFeatures() {
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#FC6856] via-[#6DE79D] to-[#724EE8]" />
             </div>
             <div className="absolute top-full left-0 p-2 border border-borderColor bg-bgColor hidden group-hover/whole:block">
-                <Link rel="noopener noreferrer" to="/launchpad" className="inline-block w-full p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
+                <Link rel="noopener noreferrer" to="/launchpad" className="inline-block w-full p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150">
                     <div className="flex items-center justify-between mb-2">
                         <div className="flex items-center mr-3">
                             <img src="/assets/images/logo.webp" alt="" className="mr-2" width={28} height={28} />

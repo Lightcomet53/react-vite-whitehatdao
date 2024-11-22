@@ -34,7 +34,7 @@ const RightSidebar: React.FC = () => {
           <span>vETH</span>
         </div>
         <div className='flex justify-center'>
-          <IconArrowsUpDown color='green' />
+          <IconArrowsUpDown color='green' className='cursor-pointer hover:opacity-75' />
         </div>
         <div className='bg-darkPurple flex justify-between pl-5 pr-10 rounded-lg py-2 mb-4 mt-1'>
           <span>0</span>

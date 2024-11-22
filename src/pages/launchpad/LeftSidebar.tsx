@@ -42,7 +42,7 @@ const LeftSidebar: React.FC = () => {
           }
         </ul>
         <hr className="mt-10 border-borderColor" />
-        <ul className="pl-[4.3vw] lg:pl-[2.2vw] mt-16">
+        <ul className="pl-[4.3vw] lg:pl-[2.2vw]">
           {
             listArrTwo.map((item: listType) => (
               <LinkText key={item.title} title={item.title} url={item.url} />

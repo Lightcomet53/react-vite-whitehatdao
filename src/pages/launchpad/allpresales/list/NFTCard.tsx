@@ -66,7 +66,8 @@ const NFTCard: React.FC<NFTCardType> = props => {
         </div>
         <div className='flex items-center mb-4 mt-7'>
           <div className='relative'>
-            <img src="/assets/images/status/1.png" alt="status" className="absolute -top-[10px] -left-[10px] w-[28px] h-[28px]" />
+            <div className='absolute -top-[2px] bg-greenColor rounded-full -left-[2px] w-[15px] h-[15px]'></div>
+            {/* <img src="/assets/images/status/1.png" alt="status" className="absolute -top-[10px] -left-[10px] w-[28px] h-[28px]" /> */}
             <img
               src={props.avatar}
               alt='avatar'

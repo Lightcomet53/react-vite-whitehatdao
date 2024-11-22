@@ -1,7 +1,12 @@
 import { IconBrandDiscord, IconBrandLinkedin, IconBrandTelegram, IconBrandTwitter } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 
-export default function MobileView() {
+
+interface PropsType {
+    setClicked: (value: boolean) => void;
+}
+
+export default function MobileView(props: PropsType) {
 
     return (
         <div className="absolute top-full z-[99999] bg-bgColor w-full h-screen px-[4.3vw] py-4">
@@ -44,7 +49,7 @@ export default function MobileView() {
                         </div>
                         <p className="text-[11.7px]">Coming Soon</p>
                     </Link>
-                    <Link rel="noopener noreferrer" to="/launchpad" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" >
+                    <Link rel="noopener noreferrer" to="/launchpad" className="inline-block mr-2 p-2 cst-link-item-bg mb-3 opacity-60 hover:opacity-100 duration-150" onClick={() => props.setClicked(false)}>
                         <div className="flex items-center justify-between mb-2">
                             <div className="flex items-center mr-3">
                                 <img src="/assets/images/logo.webp" alt="" className="mr-1" width={32} height={32} />
@@ -159,12 +164,12 @@ export default function MobileView() {
                     </div>
                 </div>
             </div>
-            <Link to="/launchpad">
-            <div className="relative group/whole border-b border-borderColor hover:border-b-0">
-                <div className="py-4 flex justify-between items-center gap-2 cursor-pointer group/item relative">
-                    Launchpad
+            <Link to="/launchpad" onClick={() => props.setClicked(false)}>
+                <div className="relative group/whole border-b border-borderColor hover:border-b-0">
+                    <div className="py-4 flex justify-between items-center gap-2 cursor-pointer group/item relative">
+                        Launchpad
+                    </div>
                 </div>
-            </div>
             </Link>
             <div className="border-b border-borderColor">
                 <div className="py-4 cursor-pointer">

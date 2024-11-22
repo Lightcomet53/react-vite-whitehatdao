@@ -53,7 +53,7 @@ export default function Header() {
                     <ConnectWalletBtn />
                 </div>
             </nav>
-            {clicked && (<MobileView />)}
+            {clicked && (<MobileView  setClicked={setClicked} />)}
         </div>
     )
 }

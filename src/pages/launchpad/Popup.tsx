@@ -11,7 +11,7 @@ const Popup: React.FC = () => {
     <Dialog
       open={open}
       handler={handleOpen}
-      className="bg-lightColor py-3 px-10"
+      className="bg-lightColor py-3 px-10 max-h-[95vh] overflow-y-scroll"
     >
       <DialogHeader>
         <div className="m-auto bg-[#23202F] font-primary font-light py-2 px-5 text-[30px] rounded-lg">Presale page terms & Conditions</div>

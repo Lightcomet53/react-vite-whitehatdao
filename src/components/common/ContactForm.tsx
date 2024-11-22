@@ -6,7 +6,7 @@ import GradientButton from './GradientButton'
 
 const ContactForm: React.FC = () => {
   return (
-    <div className='bg-lightColor p-10 pb-3 w-full'>
+    <div className='bg-lightColor p-10 pb-3 w-full h-[85vh] overflow-y-scroll'>
       <h5 className='mb-5'>CONTACT US</h5>
       <div className='mb-5'>
         <LabelText>Your Contact Details</LabelText>
